@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ИП «Красный Яр» — Промышленный парк в Красноярске</title>
   <meta name="description" content="Покупка и аренда современных промышленных помещений от 480 м² в индустриальном парке Красный Яр, Красноярск">
+  <link rel="icon" href="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -28,6 +29,10 @@
       <div class="hero__actions fade-up" data-delay="300">
         <a href="catalog.html" class="btn btn--primary">Формат помещений</a>
         <a href="investor.html" class="btn btn--outline">Меры поддержки</a>
+        <a href="#" class="btn btn--outline" onclick="alert('Файл презентации будет добавлен позже');return false;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Презентация
+        </a>
       </div>
       <div class="hero__stats fade-up" data-delay="400">
         <div class="hero__stat">
@@ -104,6 +109,11 @@
             </div>
           </div>
         </div>
+      <div class="about__gallery fade-up" data-delay="200">
+        <div class="about__gallery-main" data-lightbox="park">
+          <img src="assets/img/park-aerial.jpg" alt="Территория индустриального парка «Красный Яр» — аэросъёмка" loading="lazy">
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -169,6 +179,9 @@
         <span class="section__tag">Помещения</span>
         <h2 class="section__title">Формат<br><span class="text-red">помещений</span></h2>
         <p class="section__desc">Гибкие помещения с учётом особенностей ваших технологических процессов</p>
+      </div>
+      <div class="formats__photo fade-up">
+        <img src="assets/img/building-5.JPG" alt="Внутри производственного помещения" loading="lazy">
       </div>
       <div class="formats__grid">
         <div class="format-card fade-up">
@@ -498,5 +511,6 @@
 
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

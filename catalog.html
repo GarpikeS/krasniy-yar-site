@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="catalog">
@@ -20,7 +21,7 @@
   </div></div>
 
   <!-- Page Hero -->
-  <section class="section page-hero page-hero--small">
+  <section class="section page-hero page-hero--small page-hero--image" style="background-image: url('assets/img/building-5.JPG');">
     <div class="container">
       <div class="section__header fade-up">
         <span class="section__tag">Помещения</span>
@@ -33,7 +34,7 @@
   <!-- Format Cards -->
   <section class="section">
     <div class="container">
-      <div class="formats-grid">
+      <div class="formats__grid">
 
         <div class="format-card fade-up">
           <div class="format-card__header">
@@ -89,6 +90,21 @@
           </div>
         </div>
 
+      </div>
+
+      <div class="catalog__photos fade-up" data-lightbox="catalog" data-delay="100">
+        <div class="catalog__photo">
+          <img src="assets/img/building-1.jpg" alt="Производственный корпус" loading="lazy">
+          <span>Производственные помещения</span>
+        </div>
+        <div class="catalog__photo">
+          <img src="assets/img/building-4.jpg" alt="Офисный блок" loading="lazy">
+          <span>Офисные помещения</span>
+        </div>
+        <div class="catalog__photo">
+          <img src="assets/img/building-5.JPG" alt="Склад" loading="lazy">
+          <span>Складские помещения</span>
+        </div>
       </div>
     </div>
   </section>
@@ -178,6 +194,7 @@
 
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
   <script>
     (function() {
       const areaSlider = document.getElementById('calc-area');

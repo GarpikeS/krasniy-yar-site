@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Инфраструктура — ИП «Красный Яр»</title>
   <meta name="description" content="Инженерная инфраструктура промышленного парка «Красный Яр» — электроснабжение, газ, водоснабжение, транспортная доступность и безопасность.">
+  <link rel="icon" href="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
   </div>
 
   <!-- Page Hero -->
-  <section class="page-hero">
+  <section class="page-hero page-hero--image" style="background-image: url('assets/img/building-3.jpg');">
     <div class="container">
       <div class="page-hero__content fade-up">
         <span class="section__tag">Инфраструктура</span>
@@ -161,69 +162,8 @@
         <h2 class="section__title">Генплан территории</h2>
       </div>
 
-      <div class="genplan fade-up">
-        <div class="genplan__map">
-          <svg width="100%" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Background -->
-            <rect width="800" height="400" rx="16" fill="#f8f9fa" stroke="#e5e7eb" stroke-width="2"/>
-
-            <!-- Roads -->
-            <rect x="0" y="180" width="800" height="40" fill="#e5e7eb"/>
-            <rect x="380" y="0" width="40" height="400" fill="#e5e7eb"/>
-
-            <!-- Production buildings -->
-            <rect x="60" y="40" width="120" height="80" rx="4" fill="#d41919" opacity="0.2" stroke="#d41919" stroke-width="2"/>
-            <text x="120" y="85" text-anchor="middle" fill="#d41919" font-size="12" font-family="Inter">Корпус А</text>
-
-            <rect x="200" y="40" width="140" height="80" rx="4" fill="#d41919" opacity="0.2" stroke="#d41919" stroke-width="2"/>
-            <text x="270" y="85" text-anchor="middle" fill="#d41919" font-size="12" font-family="Inter">Корпус Б</text>
-
-            <rect x="60" y="240" width="160" height="100" rx="4" fill="#d41919" opacity="0.2" stroke="#d41919" stroke-width="2"/>
-            <text x="140" y="295" text-anchor="middle" fill="#d41919" font-size="12" font-family="Inter">Корпус В</text>
-
-            <rect x="460" y="40" width="140" height="120" rx="4" fill="#d41919" opacity="0.2" stroke="#d41919" stroke-width="2"/>
-            <text x="530" y="105" text-anchor="middle" fill="#d41919" font-size="12" font-family="Inter">Корпус Г</text>
-
-            <rect x="460" y="240" width="120" height="100" rx="4" fill="#d41919" opacity="0.2" stroke="#d41919" stroke-width="2"/>
-            <text x="520" y="295" text-anchor="middle" fill="#d41919" font-size="12" font-family="Inter">Корпус Д</text>
-
-            <!-- Office buildings -->
-            <rect x="620" y="40" width="120" height="60" rx="4" fill="#2563eb" opacity="0.2" stroke="#2563eb" stroke-width="2"/>
-            <text x="680" y="75" text-anchor="middle" fill="#2563eb" font-size="12" font-family="Inter">Офисы</text>
-
-            <rect x="620" y="120" width="120" height="40" rx="4" fill="#2563eb" opacity="0.2" stroke="#2563eb" stroke-width="2"/>
-            <text x="680" y="145" text-anchor="middle" fill="#2563eb" font-size="12" font-family="Inter">АБК</text>
-
-            <!-- Infrastructure -->
-            <rect x="240" y="260" width="100" height="60" rx="4" fill="#16a34a" opacity="0.2" stroke="#16a34a" stroke-width="2"/>
-            <text x="290" y="295" text-anchor="middle" fill="#16a34a" font-size="12" font-family="Inter">ПС 110/10</text>
-
-            <rect x="620" y="280" width="120" height="60" rx="4" fill="#16a34a" opacity="0.2" stroke="#16a34a" stroke-width="2"/>
-            <text x="680" y="315" text-anchor="middle" fill="#16a34a" font-size="12" font-family="Inter">КПП / Охрана</text>
-
-            <!-- Road labels -->
-            <text x="100" y="205" fill="#6b7280" font-size="11" font-family="Inter">Внутренняя дорога</text>
-            <text x="395" y="395" fill="#6b7280" font-size="11" font-family="Inter" transform="rotate(-90, 395, 395)">Подъезд</text>
-
-            <!-- Placeholder text -->
-            <text x="400" y="200" text-anchor="middle" fill="#9ca3af" font-size="14" font-family="Inter" font-style="italic">Интерактивный генплан территории</text>
-          </svg>
-        </div>
-
-        <div class="genplan__legend">
-          <div class="genplan__legend-item">
-            <span class="genplan__dot genplan__dot--production"></span>
-            <span class="genplan__legend-text">Производственные корпуса</span>
-          </div>
-          <div class="genplan__legend-item">
-            <span class="genplan__dot genplan__dot--office"></span>
-            <span class="genplan__legend-text">Офисные помещения</span>
-          </div>
-          <div class="genplan__legend-item">
-            <span class="genplan__dot genplan__dot--infra"></span>
-            <span class="genplan__legend-text">Инфраструктура</span>
-          </div>
-        </div>
+      <div class="genplan__image fade-up">
+        <img src="assets/img/genplan-1.jpg" alt="Генплан территории парка Красный Яр" loading="lazy" style="width:100%;border-radius:16px;">
       </div>
     </div>
   </section>
@@ -242,5 +182,6 @@
   <div id="site-footer"></div>
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

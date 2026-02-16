@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Инвесторам — ИП «Красный Яр»</title>
   <meta name="description" content="Станьте резидентом индустриального парка «Красный Яр». Готовая инфраструктура, налоговые льготы и программы господдержки.">
+  <link rel="icon" href="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
   </div></div>
 
   <!-- Page Hero -->
-  <section class="section page-hero">
+  <section class="page-hero page-hero--image" style="background-image: url('assets/img/building-2.jpg');">
     <div class="container">
       <div class="section__header fade-up">
         <span class="section__tag">Инвесторам</span>
@@ -30,56 +31,56 @@
     </div>
   </section>
 
+  <!-- Download Presentation -->
+  <section class="section section--gray" style="padding:40px 0">
+    <div class="container" style="text-align:center">
+      <a href="#" class="btn btn--primary btn--lg" onclick="alert('Файл презентации будет добавлен позже');return false;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Скачать презентацию парка
+      </a>
+    </div>
+  </section>
+
   <!-- Investor Advantages -->
-  <section class="section investor-advantages">
+  <section class="section">
     <div class="container">
-      <div class="investor-advantages__grid">
+      <div class="section__header fade-up">
+        <span class="section__tag">Преимущества</span>
+        <h2 class="section__title">Почему «Красный Яр»</h2>
+      </div>
 
-        <div class="investor-advantages__card fade-up">
-          <div class="investor-advantages__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <path d="M14 34V20L24 14L34 20V34H28V26H20V34H14Z" stroke="#d41919" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
+      <div class="investor-advantages">
+
+        <div class="investor-card fade-up">
+          <div class="investor-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12H15v-6H9v6H3z"/></svg>
           </div>
-          <h3 class="investor-advantages__title">Готовая инфраструктура</h3>
-          <p class="investor-advantages__text">Полный комплекс инженерных коммуникаций</p>
+          <h3 class="investor-card__title">Готовая инфраструктура</h3>
+          <p class="investor-card__text">Полный комплекс инженерных коммуникаций</p>
         </div>
 
-        <div class="investor-advantages__card fade-up">
-          <div class="investor-advantages__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <path d="M16 32L24 16L32 32H16Z" stroke="#d41919" stroke-width="2" stroke-linejoin="round"/>
-              <line x1="24" y1="24" x2="24" y2="28" stroke="#d41919" stroke-width="2"/>
-              <circle cx="24" cy="30" r="1" fill="#d41919"/>
-            </svg>
+        <div class="investor-card fade-up">
+          <div class="investor-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
-          <h3 class="investor-advantages__title">Налоговые льготы</h3>
-          <p class="investor-advantages__text">Сниженные ставки для резидентов индустриальных парков</p>
+          <h3 class="investor-card__title">Налоговые льготы</h3>
+          <p class="investor-card__text">Сниженные ставки для резидентов индустриальных парков</p>
         </div>
 
-        <div class="investor-advantages__card fade-up">
-          <div class="investor-advantages__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <path d="M24 14V34M18 18H30M16 22H32M18 26H30M20 30H28" stroke="#d41919" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+        <div class="investor-card fade-up">
+          <div class="investor-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
           </div>
-          <h3 class="investor-advantages__title">Господдержка</h3>
-          <p class="investor-advantages__text">Доступ к федеральным и региональным программам</p>
+          <h3 class="investor-card__title">Господдержка</h3>
+          <p class="investor-card__text">Доступ к федеральным и региональным программам</p>
         </div>
 
-        <div class="investor-advantages__card fade-up">
-          <div class="investor-advantages__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <circle cx="24" cy="20" r="4" stroke="#d41919" stroke-width="2"/>
-              <path d="M16 34C16 29.5817 19.5817 26 24 26C28.4183 26 32 29.5817 32 34" stroke="#d41919" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+        <div class="investor-card fade-up">
+          <div class="investor-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
           </div>
-          <h3 class="investor-advantages__title">Управляющая компания</h3>
-          <p class="investor-advantages__text">Профессиональное обслуживание территории</p>
+          <h3 class="investor-card__title">Управляющая компания</h3>
+          <p class="investor-card__text">Профессиональное обслуживание территории</p>
         </div>
 
       </div>
@@ -87,52 +88,42 @@
   </section>
 
   <!-- Steps Timeline -->
-  <section class="section section--gray steps-timeline">
+  <section class="section section--gray">
     <div class="container">
       <div class="section__header fade-up">
         <h2 class="section__title">Как стать резидентом</h2>
       </div>
 
-      <div class="steps-timeline__list">
+      <div class="steps-timeline">
 
-        <div class="steps-timeline__item fade-up">
-          <div class="steps-timeline__number">1</div>
-          <div class="steps-timeline__content">
-            <h3 class="steps-timeline__title">Заявка</h3>
-            <p class="steps-timeline__text">Оставьте заявку на сайте или позвоните нам</p>
-          </div>
+        <div class="step fade-up">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Заявка</h3>
+          <p class="step__text">Оставьте заявку на сайте или позвоните нам</p>
         </div>
 
-        <div class="steps-timeline__item fade-up">
-          <div class="steps-timeline__number">2</div>
-          <div class="steps-timeline__content">
-            <h3 class="steps-timeline__title">Консультация</h3>
-            <p class="steps-timeline__text">Обсудим ваши потребности и подберём помещение</p>
-          </div>
+        <div class="step fade-up">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Консультация</h3>
+          <p class="step__text">Обсудим ваши потребности и подберём помещение</p>
         </div>
 
-        <div class="steps-timeline__item fade-up">
-          <div class="steps-timeline__number">3</div>
-          <div class="steps-timeline__content">
-            <h3 class="steps-timeline__title">Документы</h3>
-            <p class="steps-timeline__text">Подготовим договор и необходимые документы</p>
-          </div>
+        <div class="step fade-up">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Документы</h3>
+          <p class="step__text">Подготовим договор и необходимые документы</p>
         </div>
 
-        <div class="steps-timeline__item fade-up">
-          <div class="steps-timeline__number">4</div>
-          <div class="steps-timeline__content">
-            <h3 class="steps-timeline__title">Заселение</h3>
-            <p class="steps-timeline__text">Получите ключи и начните обустройство</p>
-          </div>
+        <div class="step fade-up">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Заселение</h3>
+          <p class="step__text">Получите ключи и начните обустройство</p>
         </div>
 
-        <div class="steps-timeline__item fade-up">
-          <div class="steps-timeline__number">5</div>
-          <div class="steps-timeline__content">
-            <h3 class="steps-timeline__title">Поддержка</h3>
-            <p class="steps-timeline__text">Помогаем с подключением к мерам господдержки</p>
-          </div>
+        <div class="step fade-up">
+          <div class="step__number">5</div>
+          <h3 class="step__title">Поддержка</h3>
+          <p class="step__text">Помогаем с подключением к мерам господдержки</p>
         </div>
 
       </div>
@@ -140,43 +131,46 @@
   </section>
 
   <!-- Support Measures -->
-  <section class="section">
+  <section class="section section--dark">
     <div class="container">
       <div class="section__header fade-up">
-        <span class="section__tag">Господдержка</span>
-        <h2 class="section__title">Меры поддержки</h2>
+        <span class="section__tag section__tag--light">Господдержка</span>
+        <h2 class="section__title section__title--light">Меры поддержки</h2>
       </div>
 
-      <div class="support-grid">
+      <div class="support__grid">
 
         <div class="support-card fade-up">
-          <div class="support-card__header">
-            <h3 class="support-card__title">Промышленная ипотека</h3>
-            <span class="support-card__badge">до 500 млн ₽</span>
-          </div>
-          <div class="support-card__body">
-            <p class="support-card__text">Льготное финансирование приобретения промышленной недвижимости на территории индустриального парка.</p>
-          </div>
+          <div class="support-card__badge">Федеральная</div>
+          <h3 class="support-card__title">Промышленная ипотека</h3>
+          <div class="support-card__amount">до 500 млн ₽</div>
+          <ul class="support-card__list">
+            <li>Льготное финансирование</li>
+            <li>Приобретение промышленной недвижимости</li>
+            <li>Срок: до 7 лет</li>
+          </ul>
         </div>
 
         <div class="support-card fade-up">
-          <div class="support-card__header">
-            <h3 class="support-card__title">Льготное кредитование</h3>
-            <span class="support-card__badge">до 200 млн ₽</span>
-          </div>
-          <div class="support-card__body">
-            <p class="support-card__text">Программы льготного кредитования для развития производственных мощностей и модернизации оборудования.</p>
-          </div>
+          <div class="support-card__badge support-card__badge--accent">МСП</div>
+          <h3 class="support-card__title">Льготное кредитование</h3>
+          <div class="support-card__amount">до 200 млн ₽</div>
+          <ul class="support-card__list">
+            <li>Развитие производственных мощностей</li>
+            <li>Модернизация оборудования</li>
+            <li>Срок: 3–10 лет</li>
+          </ul>
         </div>
 
         <div class="support-card fade-up">
-          <div class="support-card__header">
-            <h3 class="support-card__title">Региональная промышленная ипотека</h3>
-            <span class="support-card__badge">5–200 млн ₽</span>
-          </div>
-          <div class="support-card__body">
-            <p class="support-card__text">Региональная программа финансирования для приобретения и строительства промышленных объектов.</p>
-          </div>
+          <div class="support-card__badge support-card__badge--region">Региональная</div>
+          <h3 class="support-card__title">Региональная промышленная ипотека</h3>
+          <div class="support-card__amount">5–200 млн ₽</div>
+          <ul class="support-card__list">
+            <li>ФРП Красноярского края</li>
+            <li>Целевое финансирование</li>
+            <li>Ставка: 4–6% годовых</li>
+          </ul>
         </div>
 
       </div>
@@ -190,14 +184,11 @@
         <h2 class="section__title">Налоговые льготы</h2>
       </div>
 
-      <div class="tax-benefits__grid">
+      <div class="tax-benefits">
 
         <div class="tax-benefits__card fade-up">
           <div class="tax-benefits__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <path d="M17 31V21M24 31V17M31 31V24" stroke="#d41919" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 20V10M12 20V4M18 20V14"/></svg>
           </div>
           <h3 class="tax-benefits__title">Налог на прибыль</h3>
           <p class="tax-benefits__text">Сниженная ставка для резидентов индустриальных парков</p>
@@ -205,12 +196,7 @@
 
         <div class="tax-benefits__card fade-up">
           <div class="tax-benefits__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <rect x="16" y="20" width="16" height="12" rx="2" stroke="#d41919" stroke-width="2"/>
-              <path d="M20 20V18C20 15.7909 21.7909 14 24 14C26.2091 14 28 15.7909 28 18V20" stroke="#d41919" stroke-width="2"/>
-              <circle cx="24" cy="26" r="2" fill="#d41919"/>
-            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="10" width="8" height="8" rx="1"/><path d="M10 10V8a2 2 0 014 0v2"/><circle cx="12" cy="14" r="1" fill="currentColor"/></svg>
           </div>
           <h3 class="tax-benefits__title">Налог на имущество</h3>
           <p class="tax-benefits__text">Льготные условия для резидентов парка</p>
@@ -218,11 +204,7 @@
 
         <div class="tax-benefits__card fade-up">
           <div class="tax-benefits__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="#FDEAEA"/>
-              <path d="M24 14L34 20V28L24 34L14 28V20L24 14Z" stroke="#d41919" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M24 22V28M21 25H27" stroke="#d41919" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L20 7V17L12 22L4 17V7L12 2Z"/><path d="M12 10V16M9 13H15"/></svg>
           </div>
           <h3 class="tax-benefits__title">Земельный налог</h3>
           <p class="tax-benefits__text">Преференциальные ставки для участников</p>
@@ -239,8 +221,8 @@
         <h2 class="section__title">Оставить заявку</h2>
       </div>
 
-      <div class="contacts__form-wrap fade-up">
-        <form id="investorForm" class="contacts__form">
+      <div class="contacts__form-wrap fade-up" style="max-width:700px;margin:0 auto">
+        <form id="investorForm">
           <div class="form-group">
             <input type="text" class="form-input" name="name" placeholder="Ваше имя" required>
           </div>
@@ -251,7 +233,7 @@
             <input type="text" class="form-input" name="company" placeholder="Название компании">
           </div>
           <div class="form-group">
-            <textarea class="form-textarea" name="message" placeholder="Сообщение" rows="4"></textarea>
+            <textarea class="form-input form-textarea" name="message" placeholder="Сообщение" rows="4"></textarea>
           </div>
           <div class="form-privacy">
             <label>
@@ -259,7 +241,7 @@
               Согласен на обработку персональных данных
             </label>
           </div>
-          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
         </form>
       </div>
     </div>
@@ -269,5 +251,6 @@
 
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

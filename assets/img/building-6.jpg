@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<head>
+    <title>Аренда</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" id="vp" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <script>
+        if (screen.width < 375) {
+            var mvp = document.getElementById('vp');
+            mvp.setAttribute('content','width=375, initial-scale='+screen.width/375);
+        }
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8dc71077-16b6-4d5f-9ec4-1a6ab97df7dd&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Аренда офиса, аренда участка, аренда помещения" />
+<meta name="description" content="В индустриальном парке «Красный Яр» имеется большой выбор офисных помещений, производственно-складских помещений, так же земельные участки в аренду." />
+<link href="/bitrix/cache/css/s1/main/page_966968d984d541611bfe6eaf81010751/page_966968d984d541611bfe6eaf81010751_v1.css?17712206296836" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/main/template_3e44e83b967ef24546fa81e2c891debe/template_3e44e83b967ef24546fa81e2c891debe_v1.css?1771219432138707" type="text/css"  data-template-style="true" rel="stylesheet" />
+<script  src="/bitrix/cache/js/s1/main/template_6b36c33b9794af33a847d81a85f3646c/template_6b36c33b9794af33a847d81a85f3646c_v1.js?177121936011089"></script>
+<script  src="/bitrix/cache/js/s1/main/page_e2ce7b9a99e5d6b7444dc5d24fc68481/page_e2ce7b9a99e5d6b7444dc5d24fc68481_v1.js?1771220629820"></script>
+
+
+</head>
+
+
+<body>
+    <script data-skip-moving="true" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+                    <div class="body-wrap">
+
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" data-aos="fade-up" data-aos-delay="2000" class="header__logo animate__animated animate__fadeInDown">
+                    <img src="/local/templates/main/img/logo/logo.png" alt="">
+                </a>
+
+                <div class="header__mobile-wrap">
+                    <div class="header__mobile-scroll">
+                        <div class="header__mobile-menu">
+                            <nav class="mobile-menu">
+                                <div class="mobile-menu__name">
+                                    Первая очередь
+                                </div>
+                                <ul class="mobile-menu__list">
+                                    <li class="mobile-menu__item">
+                                        <a href="/rent/" class="mobile-menu__link">
+                                            Аренда
+                                        </a>
+                                    </li>
+                                    <li class="mobile-menu__item">
+                                        <a href="/services/" class="mobile-menu__link">
+                                            Услуги УК
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mobile-menu__name">
+                                    Вторая очередь
+                                </div>
+                                <ul class="mobile-menu__list">
+                                    <li class="mobile-menu__item">
+                                        <a href="/construction/" class="mobile-menu__link">
+                                            Строительство
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mobile-menu__name">
+                                    Третья очередь
+                                </div>
+                                <ul class="mobile-menu__list">
+                                    <li class="mobile-menu__item">
+                                        <span class="mobile-menu__link mobile-menu__link_disabled">
+                                            Скоро начнем работы
+                                        </span>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        
+
+	<div class="header__menu animate__animated animate__fadeInDown">
+		<nav class="top-menu">
+			<ul class="top-menu__list">
+															<li class="top-menu__item">
+						<a href="/about/" class="top-menu__link">О парке</a>
+					</li>
+										
+
+
+					</li>
+
+															<li class="top-menu__item">
+						<a href="/rent/" class="top-menu__link">Аренда</a>
+					</li>
+										
+
+
+					</li>
+
+															<li class="top-menu__item">
+						<a href="/construction/" class="top-menu__link">Строительство</a>
+					</li>
+										
+
+
+					</li>
+
+															<li class="top-menu__item">
+						<a href="/services/" class="top-menu__link">Управляющая компания</a>
+					</li>
+										
+
+
+					</li>
+
+															<li class="top-menu__item">
+						<a href="/residents/" class="top-menu__link">Резиденты</a>
+					</li>
+										
+
+
+					</li>
+
+															<li class="top-menu__item">
+						<a href="/contacts/" class="top-menu__link">Контакты</a>
+					</li>
+										
+
+
+					</li>
+
+															<li class="top-menu__item top-menu__item--has-dropdown">
+							<a  class="top-menu__link top-menu__link--dropdown">
+								Медиа								<svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0L7 5L2 0H0L7 7L14 0H12Z" fill="#7B7B7B" />
+								</svg>
+							</a>
+							<ul class="submenu submenu--level-1">
+																	<li class="submenu__item">
+										<a href="/blog/" class="submenu__link">
+											<span class="submenu__text">Блог</span>
+										</a>
+									</li>
+																	<li class="submenu__item">
+										<a href="/media/" class="submenu__link">
+											<span class="submenu__text">Сми</span>
+										</a>
+									</li>
+								
+
+							</ul>
+						</li>
+						
+										
+
+
+					</li>
+
+							</ul>
+		</nav>
+	</div>
+
+
+
+                        <a href="tel:+79240424900" class="header__phone">+7 924 042 49 00</a>
+
+                        <div data-aos="fade-up" data-aos-delay="2000" class="header__call-btn animate__animated animate__fadeInRight">
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9528 16.5676L12.0289 14.1196C11.3463 13.2482 10.0637 13.103 9.21556 13.8084L8.24328 14.6175C8.03642 14.7835 7.70543 14.7627 7.51925 14.576C5.69882 12.5429 4.41625 10.157 3.7129 7.52226C3.65084 7.25256 3.79565 6.96211 4.06457 6.87913L5.24371 6.48495C6.29873 6.13226 6.85728 4.99121 6.5056 3.93315L5.47127 1.02868C5.16097 0.136587 4.12663 -0.257592 3.29916 0.178079C0.175474 1.87927 -1.7277 5.57211 2.24414 12.8748C6.21599 20.1775 10.3533 20.5509 13.477 18.8497C14.3045 18.4141 14.532 17.3145 13.9528 16.5676Z" fill="white" />
+                            </svg>
+                            <span>
+                                Заказать звонок
+                            </span>
+                        </div>
+
+                        <a href="mailto:red-yar@mail.ru" class="header__mail">red-yar@mail.ru</a>
+
+                        <div class="header__soc">
+                            <a href="#" class="header__soc-icon"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20913 16.2273C7.24621 16.6554 7.27638 17.3439 7.37338 18.0226C7.47145 18.7072 7.60487 19.3907 7.78205 20.0589C7.90276 20.5145 8.09739 20.9575 8.311 21.38C8.49551 21.7451 8.76796 21.8052 9.11908 21.566C9.59199 21.2437 10.0379 20.8812 10.4884 20.527C10.5962 20.4425 10.6798 20.3632 10.8264 20.4473C11.1058 20.6074 11.3905 20.7592 11.6744 20.9116C12.5637 21.3886 13.5281 21.6171 14.5224 21.6244C15.1617 21.6291 15.8068 21.5446 16.4396 21.3666C17.4827 21.073 18.4216 20.5992 19.2467 19.9056C20.3287 18.996 21.0859 17.8698 21.5317 16.5185C22.0716 14.8819 21.9729 13.269 21.3457 11.7033C20.7762 10.2809 19.8183 9.14107 18.5199 8.29549C17.6154 7.70683 16.6276 7.31648 15.5721 7.19491C14.6312 7.08628 13.6768 7.0921 12.7329 7.34493C11.5989 7.64863 10.6167 8.1972 9.77283 8.99515C8.74166 9.97049 8.08015 11.1806 7.68441 12.529C7.35613 13.6475 7.23069 14.8022 7.20913 16.2273M0 14.5049C0.0288831 13.2347 0.180627 11.9824 0.498556 10.7564C0.995389 8.83909 1.87158 7.10697 3.0989 5.54922C4.22447 4.12037 5.58758 2.96462 7.14576 2.04424C8.05342 1.50839 9.01411 1.07277 10.0265 0.75851C11.234 0.383245 12.4551 0.0920434 13.7277 0.0635914C14.2676 0.0515209 14.8106 -0.0267221 15.3464 0.00948951C16.4166 0.0819128 17.4777 0.219 18.521 0.508046C19.7601 0.85141 20.9305 1.33919 22.029 1.99746C23.6613 2.97561 25.0356 4.24086 26.1702 5.77123C27.1374 7.07571 27.8493 8.50974 28.3367 10.0511C28.7037 11.2131 28.873 12.4137 28.9697 13.6313C29.0549 14.6991 28.9482 15.7493 28.8016 16.7944C28.6628 17.7829 28.3867 18.7436 28.0123 19.6767C27.5999 20.7049 27.0925 21.6781 26.4606 22.5855C25.762 23.5884 24.9496 24.4879 24.0193 25.2856C22.6167 26.4884 21.0448 27.3838 19.2943 27.9696C18.1761 28.3438 17.035 28.6061 15.8529 28.6606C15.2276 28.6893 14.5982 28.7626 13.9775 28.7193C12.9207 28.6453 11.8707 28.5246 10.8691 28.105C10.0509 27.762 9.31867 27.2887 8.59142 26.8013C8.42459 26.6895 8.34915 26.7091 8.23103 26.8339C7.43244 27.6773 6.43597 28.178 5.35027 28.5542C4.65104 28.7964 3.94405 28.7641 3.24051 28.7255C2.73182 28.6975 2.18973 28.2033 2.14381 27.5777C2.10459 27.0462 2.11579 26.5071 2.03152 25.9834C1.88926 25.0979 1.70669 24.2178 1.5086 23.3427C1.33142 22.5609 1.08635 21.7942 0.914775 21.0114C0.674873 19.9168 0.452861 18.8173 0.267276 17.7127C0.164892 17.104 0.151097 16.4804 0.100875 15.8633C0.0642325 15.4106 0.0334095 14.9576 0 14.5049" fill="white" />
+                                </svg></a>
+                            <a href="#" class="header__soc-icon"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.213647 28.173C0.344606 28.298 0.516066 28.3639 0.690148 28.3639C0.78095 28.3639 0.87251 28.3459 0.959448 28.3092L6.88632 25.7953C9.14897 27.2035 11.7361 27.946 14.3927 27.9461H14.393C18.0579 27.9461 21.4868 26.5357 24.0475 23.975C29.428 18.5945 29.3185 9.73046 23.8035 4.21544C21.0851 1.49705 17.4968 0 13.6997 0C10.0341 0 6.60501 1.41046 4.04394 3.97153C1.77135 6.24412 0.376897 9.27521 0.117602 12.5065C-0.128376 15.5721 0.652061 18.6745 2.31864 21.2831L0.0428769 27.4345C-0.0526165 27.6927 0.0144497 27.9829 0.213647 28.173ZM18.4368 22.061H18.4378C19.4104 22.0602 20.4341 21.5611 21.3204 20.6561C21.9307 20.033 22.5465 19.1131 22.5465 18.4627C22.5465 17.4602 22.0724 17.1934 21.3549 16.7896L21.3547 16.7894C21.1798 16.6911 20.9815 16.5795 20.7427 16.4358C20.6109 16.3562 20.4455 16.2477 20.2702 16.1327L20.2641 16.1287C19.3525 15.5304 18.6618 15.1068 18.0739 15.1068C17.9362 15.1068 17.806 15.1301 17.6871 15.1759C17.1721 15.3743 16.749 15.9042 16.3398 16.4168L16.3382 16.4188C16.1884 16.6064 15.9749 16.8738 15.8452 16.9934C15.3286 16.8994 14.2392 16.2246 13.0637 15.0491C11.8867 13.8721 11.2117 12.7814 11.119 12.2662C11.2383 12.1363 11.5068 11.9218 11.6956 11.771L11.6988 11.7685C12.2093 11.361 12.7371 10.9395 12.9367 10.426C13.1912 9.76606 12.7247 8.977 11.9841 7.8486C11.8675 7.67107 11.7574 7.50334 11.6775 7.37107C11.5334 7.13153 11.422 6.93346 11.3237 6.75867L11.3234 6.75816C10.9195 6.04044 10.6527 5.56628 9.6501 5.56628C8.99938 5.56628 8.07936 6.18168 7.45617 6.79148C6.55043 7.6779 6.05165 8.70211 6.05165 9.67595C6.05337 12.3209 7.52952 15.3541 10.1016 17.9977L10.115 18.0111C12.7587 20.5832 15.7919 22.0594 18.4368 22.061Z" fill="white" />
+                                </svg></a>
+                            <a href="#" class="header__soc-icon"><svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.9746 0.166626C29.1449 -0.365365 30.276 0.400286 29.9399 2.12373L29.8964 2.31914L25.3711 23.6769C25.0689 25.1287 24.2177 25.524 23.034 24.9423L22.8706 24.8569L13.4107 17.4204C12.9341 17.0458 12.8978 16.3369 13.3334 15.9155L24.5446 5.07178C25.0779 4.59763 24.4875 4.35413 23.7877 4.71932L23.6765 4.7821L7.9581 14.4193C7.712 14.5702 7.41271 14.6074 7.13717 14.5213L1.06991 12.6256C-0.349875 12.19 -0.410584 11.2323 1.21314 10.511L1.40051 10.4319L27.9746 0.166626Z" fill="white" />
+                                </svg></a>
+                            <a href="#" class="header__soc-icon"><svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0899 10.9126C26.1913 10.9715 26.2551 11.0114 26.3214 11.0467C30.6461 13.3477 33.4916 16.8645 34.9381 21.5303C35.0476 21.8835 35.0414 21.8866 34.6725 21.8867C32.8262 21.8871 30.9798 21.8828 29.1336 21.8917C28.8967 21.893 28.7931 21.815 28.7138 21.5906C27.8213 19.0633 26.3296 16.9915 24.046 15.5365C22.8462 14.7719 21.5328 14.309 20.1253 14.1103C19.7894 14.0628 19.7608 14.0874 19.7607 14.434C19.7602 16.7844 19.7605 19.135 19.7602 21.4854C19.7602 21.8861 19.7594 21.886 19.3486 21.8869C16.5981 21.8927 13.9118 21.5258 11.3449 20.4874C7.58903 18.9678 4.83144 16.3505 2.93141 12.8006C1.61421 10.3396 0.85104 7.69842 0.417916 4.9534C0.176555 3.42386 0.0444461 1.88439 0.000447983 0.336341C-0.00709455 0.07201 0.0796445 -0.00112967 0.333691 1.31335e-05C2.11156 0.00812707 3.88965 0.00367012 5.66752 0.00492721C5.99619 0.00515577 5.99962 0.015441 6.01024 0.357255C6.09504 3.06365 6.46771 5.71896 7.44161 8.26365C8.15929 10.139 9.16279 11.833 10.6528 13.207C11.5365 14.022 12.5342 14.6527 13.6844 15.0269C14.1093 15.1651 14.1115 15.1646 14.1115 14.7277C14.1117 9.95832 14.1116 5.18904 14.1117 0.419766C14.1117 0.00504148 14.1122 0.00424152 14.5374 0.00424152C16.1359 0.0037844 17.7343 0.0037844 19.3328 0.00424152C19.7599 0.00424152 19.7603 0.00504151 19.7603 0.44468C19.7604 3.05154 19.7603 5.6584 19.7605 8.26525C19.7605 8.66421 19.7668 8.67141 20.1657 8.59358C21.4839 8.33634 22.6175 7.70059 23.6352 6.85286C25.7136 5.12139 27.1216 2.93531 27.962 0.374168C28.0827 0.00652716 28.0782 0.00424152 28.4748 0.00424152C30.1074 0.00389868 31.7401 0.00355584 33.3727 0.00469864C33.7192 0.00492721 33.728 0.013384 33.6594 0.351312C33.1592 2.81372 32.0613 4.99317 30.508 6.95137C29.3088 8.4633 27.9126 9.76199 26.2681 10.7838C26.2184 10.8147 26.1729 10.8523 26.0899 10.9126" fill="white" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </header>
+
+
+
+        <main class="page page-front">
+
+                            
+                <div class="breadcrumbs">
+                    <div class="container breadcrumbs__container">
+                        <div class="breadcrumbs__inner">
+                            <div class="breadcrumbs__wrap"><div class="breadcrumbs__icon">
+                                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 5.84595H2.56076L8.35489 0H6.42568L0 6.49534L6.42568 13H8.35489L2.56076 7.15H18V5.84595Z" fill="black" />
+                                    </svg>
+                                </div>  <div class="breadcrumbs__item">
+                                    <a href="/" class="breadcrumbs__link">Главная</a>
+                                </div>  </div>
+                        </div>
+                    </div>
+                </div>
+                   <div class="page-title">
+                    <div class="container page-title__container">
+                        <h1 class="page-title__title">Аренда</h1>
+                    </div>
+                </div>
+                             
+ 
+    <section class="rent-description">
+	<div class="container rent-description__container">
+		<div class="rent-description__wrap">
+			<div class="rent-description__col">
+				 <p>В индустриальном парке «Красный Яр» имеется большой выбор офисных помещений, производственно-складских помещений, так же земельные участки.</p>
+			</div>
+			<div class="rent-description__col">
+				 <p>Преимуществами размещения в парке являются привлекательная цена, хорошая транспортная и пешеходная доступность, круглосуточная охрана и круглосуточный доступ на территорию.</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+<section class="rent-objects">
+	<div class="container rent-objects__container">
+		
+<div class="rent-objects__header">
+	<div class="rent-objects__scroller">
+		<nav class="rent-objects__navigation">
+												<a href="/rent/?cat=all">
+						<button id="all" class="rent-objects__tab">Все</button>
+					</a>
+								<a href="/rent/?cat=razdel-arendy-1">
+					<button id="razdel-arendy-1" class="rent-objects__tab">Офисные помещения</button>
+				</a>
+
+											<a href="/rent/?cat=razdel-arendy-2">
+					<button id="razdel-arendy-2" class="rent-objects__tab">Производственные помещения</button>
+				</a>
+
+											<a href="/rent/?cat=zemelnye-uchastki">
+					<button id="zemelnye-uchastki" class="rent-objects__tab">Земельные участки</button>
+				</a>
+
+					</nav>
+	</div>
+</div><div class="rent-objects__wrap">
+
+
+            
+
+
+        <a href="/rent/kutuzova-1-str-6-etazh-3/" class="rent-objects__item rent-objects-item">
+            <div class="rent-objects-item__top">
+                <div class="rent-objects-item__img">
+                    <img src="/upload/iblock/e0a/7hiqzdv5693ygrcrigon07a32029ba7x.jpg" alt="">
+                </div>
+            </div>
+            <div class="rent-objects-item__content">
+                <div class="rent-objects-item__content-left">
+                    <h3 class="rent-objects-item__title">
+
+                        Аренда офисного помещения                    </h3>
+                </div>
+                <div class="rent-objects-item__content-right">
+                    <div class="rent-objects-item__name">
+                        Кутузова, 1, стр 6, этаж 3                    </div>
+                    <div class="rent-objects-item__address">
+                        389,1 м2                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+            
+
+
+        <a href="/rent/kutuzova-1-str-6-etazh-2/" class="rent-objects__item rent-objects-item">
+            <div class="rent-objects-item__top">
+                <div class="rent-objects-item__img">
+                    <img src="/upload/iblock/3ad/mparyvcfyqpy16l6r897hj3fa1i09342.jpg" alt="">
+                </div>
+            </div>
+            <div class="rent-objects-item__content">
+                <div class="rent-objects-item__content-left">
+                    <h3 class="rent-objects-item__title">
+
+                        Аренда офисного помещения                    </h3>
+                </div>
+                <div class="rent-objects-item__content-right">
+                    <div class="rent-objects-item__name">
+                        Кутузова, 1, стр 6, этаж 2                    </div>
+                    <div class="rent-objects-item__address">
+                        400 м2                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+            
+
+
+        <a href="/rent/kutuzova-1-str-37-tsokol/" class="rent-objects__item rent-objects-item">
+            <div class="rent-objects-item__top">
+                <div class="rent-objects-item__img">
+                    <img src="/upload/iblock/df3/435oo2tekr0nrob49or5wv11qoi2vqea.jpg" alt="">
+                </div>
+            </div>
+            <div class="rent-objects-item__content">
+                <div class="rent-objects-item__content-left">
+                    <h3 class="rent-objects-item__title">
+
+                        Аренда производственного помещения                    </h3>
+                </div>
+                <div class="rent-objects-item__content-right">
+                    <div class="rent-objects-item__name">
+                        Кутузова, 1, стр 37, цоколь                    </div>
+                    <div class="rent-objects-item__address">
+                        747 м2                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+            
+
+
+        <a href="/rent/kutuzova-1-str-37-pom-3-30/" class="rent-objects__item rent-objects-item">
+            <div class="rent-objects-item__top">
+                <div class="rent-objects-item__img">
+                    <img src="/upload/iblock/a3b/onliknwn8ftob0ib699cdb2dwc9ck6gv.jpg" alt="">
+                </div>
+            </div>
+            <div class="rent-objects-item__content">
+                <div class="rent-objects-item__content-left">
+                    <h3 class="rent-objects-item__title">
+
+                        Аренда офисного помещения                    </h3>
+                </div>
+                <div class="rent-objects-item__content-right">
+                    <div class="rent-objects-item__name">
+                        Кутузова, 1, стр 37, пом. 3-30                    </div>
+                    <div class="rent-objects-item__address">
+                        39,2 м2                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+            
+
+
+        <a href="/rent/kutuzova-1-str-37-pom-3-05/" class="rent-objects__item rent-objects-item">
+            <div class="rent-objects-item__top">
+                <div class="rent-objects-item__img">
+                    <img src="/upload/iblock/f04/ivd2lte97ussys2gl65nfj4ja1j2g5qv.JPG" alt="">
+                </div>
+            </div>
+            <div class="rent-objects-item__content">
+                <div class="rent-objects-item__content-left">
+                    <h3 class="rent-objects-item__title">
+
+                        Аренда офисного помещения                    </h3>
+                </div>
+                <div class="rent-objects-item__content-right">
+                    <div class="rent-objects-item__name">
+                        Кутузова, 1, стр 37, пом. 3-05                    </div>
+                    <div class="rent-objects-item__address">
+                        50,4 м2                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+            
+
+
+        <a href="/rent/kutuzova-1-str-37-pom-3-04/" class="rent-objects__item rent-objects-item">
+            <div class="rent-objects-item__top">
+                <div class="rent-objects-item__img">
+                    <img src="/upload/iblock/15e/tki0rxutwleiskxwvfd8xg74ypsoihi9.jpg" alt="">
+                </div>
+            </div>
+            <div class="rent-objects-item__content">
+                <div class="rent-objects-item__content-left">
+                    <h3 class="rent-objects-item__title">
+
+                        Аренда офисного помещения                    </h3>
+                </div>
+                <div class="rent-objects-item__content-right">
+                    <div class="rent-objects-item__name">
+                        Кутузова, 1, стр 37, пом. 3-04                    </div>
+                    <div class="rent-objects-item__address">
+                        51,5 м2                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+       
+</div>
+ <div class="rent-objects__footer">
+   
+        <div class="pagination">
+            <!-- Левая стрелка -->
+            <a href="javascript:void(0)"
+                class="pagination__arrow pagination__arrow_left _is-disabled">
+                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.4004 6.29564L2.78877 6.29564L9.09793 0L6.99724 0L0.000391006 6.99498L6.99724 14H9.09793L2.78877 7.7L22.4004 7.7V6.29564Z"
+                        fill="black" fill-opacity="0.801152" />
+                </svg>
+            </a>
+
+            <!-- Ссылки на страницы -->
+            <div class="pagination__links">
+                                                                                        <span class="pagination__link pagination__link_active">1</span>
+                                                                                                                                    <a href="/rent/?PAGEN_1=2"
+                                class="pagination__link">2</a>
+                                                                        </div>
+
+            <!-- Правая стрелка -->
+            <a href="/rent/?PAGEN_1=2"
+                class="pagination__arrow pagination__arrow_right ">
+                <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 6.29564L19.6116 6.29564L13.3025 0L15.4032 0L22.4 6.99498L15.4032 14H13.3025L19.6116 7.7L0 7.7L0 6.29564Z"
+                        fill="black" fill-opacity="0.801152" />
+                </svg>
+            </a>
+        </div>
+  
+</div>
+	</div>
+</section>    
+
+
+
+
+</main>
+
+
+
+<footer class="footer">
+    <div class="container footer__container">
+        
+	<div class="footer__menu">
+		<nav class="footer-menu">
+			<ul class="footer-menu__list">
+
+
+									<li class="footer-menu__item">
+						<a href="/about/" class="footer-menu__link">О парке</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/rent/" class="footer-menu__link">Аренда</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/construction/" class="footer-menu__link">Строительство</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/services/" class="footer-menu__link">Управляющая компания</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/residents/" class="footer-menu__link">Резиденты</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/contacts/" class="footer-menu__link">Контакты</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/blog/" class="footer-menu__link">Блог</a>
+					</li>
+									<li class="footer-menu__item">
+						<a href="/media/" class="footer-menu__link">СМИ</a>
+					</li>
+				
+			</ul>
+		</nav>
+	</div>
+
+        <div class="footer__address">
+            <svg width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.5C0 18.3 10.5 30 10.5 30C10.5 30 21 18.3 21 10.5C21 4.65 16.35 0 10.5 0C4.65 0 0 4.65 0 10.5ZM6.75 10.5C6.75 8.4 8.4 6.75 10.5 6.75C12.6 6.75 14.25 8.4 14.25 10.5C14.25 12.6 12.6 14.25 10.5 14.25C8.4 14.25 6.75 12.6 6.75 10.5Z" fill="#FF0014" />
+            </svg>
+            <span>Кутузова 1, стр. 37, оф. 3-14</span>
+        </div>
+        <a href="tel:+7 (391) 989-99-49" class="footer__phone"><svg width="19" height="30" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H17C18.1046 0 19 0.895431 19 2V27.2308C19 28.3353 18.1046 29.2308 17 29.2308H2C0.895431 29.2308 0 28.3353 0 27.2308V2ZM4.38462 24.3846C4.38462 23.8323 4.83233 23.3846 5.38462 23.3846H13.6154C14.1677 23.3846 14.6154 23.8323 14.6154 24.3846V25.3077C14.6154 25.86 14.1677 26.3077 13.6154 26.3077H5.38462C4.83233 26.3077 4.38462 25.86 4.38462 25.3077V24.3846ZM8.80769 2.92308C7.97927 2.92308 7.30769 3.59465 7.30769 4.42308V5.80769C7.30769 6.63612 7.97927 7.30769 8.80769 7.30769H10.1923C11.0207 7.30769 11.6923 6.63612 11.6923 5.80769V4.42308C11.6923 3.59465 11.0207 2.92308 10.1923 2.92308H8.80769Z" fill="#FF0014" />
+            </svg><span>+7 (391) 989-99-49</span></a>
+        <div class="footer__soc">
+            <!-- <a href="#"><svg width="39" height="39" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20913 16.2273C7.2462 16.6554 7.27638 17.3439 7.37338 18.0226C7.47145 18.7072 7.60487 19.3907 7.78205 20.0589C7.90276 20.5145 8.09739 20.9575 8.311 21.38C8.49551 21.7451 8.76796 21.8052 9.11908 21.566C9.59199 21.2437 10.0379 20.8812 10.4884 20.527C10.5962 20.4425 10.6798 20.3632 10.8264 20.4473C11.1058 20.6074 11.3905 20.7592 11.6744 20.9116C12.5637 21.3886 13.5281 21.6171 14.5224 21.6244C15.1617 21.6291 15.8068 21.5446 16.4396 21.3666C17.4827 21.073 18.4216 20.5992 19.2467 19.9056C20.3287 18.996 21.0859 17.8698 21.5317 16.5185C22.0716 14.8819 21.9729 13.269 21.3457 11.7033C20.7762 10.2809 19.8183 9.14107 18.5199 8.29549C17.6154 7.70683 16.6276 7.31648 15.5721 7.19491C14.6312 7.08628 13.6768 7.0921 12.7329 7.34493C11.5989 7.64863 10.6167 8.1972 9.77283 8.99515C8.74166 9.97049 8.08015 11.1806 7.68441 12.529C7.35613 13.6475 7.23069 14.8022 7.20913 16.2273ZM0 14.5049C0.0288831 13.2347 0.180627 11.9824 0.498556 10.7564C0.995389 8.83909 1.87158 7.10697 3.0989 5.54922C4.22447 4.12037 5.58758 2.96462 7.14576 2.04424C8.05342 1.50839 9.01411 1.07277 10.0265 0.75851C11.234 0.383245 12.4551 0.0920434 13.7277 0.0635914C14.2676 0.0515209 14.8106 -0.0267221 15.3464 0.00948951C16.4166 0.0819128 17.4777 0.219 18.521 0.508046C19.7601 0.85141 20.9305 1.33919 22.029 1.99746C23.6613 2.97561 25.0356 4.24086 26.1702 5.77123C27.1374 7.07571 27.8493 8.50974 28.3367 10.0511C28.7037 11.2131 28.873 12.4137 28.9697 13.6313C29.0549 14.6991 28.9482 15.7493 28.8016 16.7944C28.6628 17.7829 28.3867 18.7436 28.0123 19.6767C27.5999 20.7049 27.0925 21.6781 26.4606 22.5855C25.762 23.5884 24.9496 24.4879 24.0193 25.2856C22.6167 26.4884 21.0448 27.3838 19.2943 27.9696C18.1761 28.3438 17.035 28.6061 15.8529 28.6606C15.2276 28.6893 14.5982 28.7626 13.9775 28.7193C12.9207 28.6453 11.8707 28.5246 10.8691 28.105C10.0509 27.762 9.31867 27.2887 8.59142 26.8013C8.42459 26.6895 8.34915 26.7091 8.23103 26.8339C7.43244 27.6773 6.43597 28.178 5.35027 28.5542C4.65104 28.7964 3.94405 28.7641 3.24051 28.7255C2.73182 28.6975 2.18973 28.2033 2.14381 27.5777C2.10459 27.0462 2.11579 26.5071 2.03152 25.9834C1.88926 25.0979 1.70669 24.2178 1.5086 23.3427C1.33142 22.5609 1.08635 21.7942 0.914775 21.0114C0.674873 19.9168 0.452861 18.8173 0.267276 17.7127C0.164892 17.104 0.151097 16.4804 0.100875 15.8633C0.0642325 15.4106 0.0334095 14.9576 0 14.5049Z" fill="black" />
+                </svg></a> -->
+            <!-- <a href="#"><svg width="39" height="39" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.213647 28.173C0.344606 28.298 0.516066 28.3639 0.690148 28.3639C0.78095 28.3639 0.87251 28.3459 0.959448 28.3092L6.88632 25.7953C9.14897 27.2035 11.7361 27.946 14.3927 27.9461H14.393C18.0579 27.9461 21.4868 26.5357 24.0475 23.975C29.428 18.5945 29.3185 9.73046 23.8035 4.21544C21.0851 1.49705 17.4968 0 13.6997 0C10.0341 0 6.60501 1.41046 4.04394 3.97153C1.77135 6.24412 0.376897 9.27521 0.117602 12.5065C-0.128376 15.5721 0.652061 18.6745 2.31864 21.2831L0.0428769 27.4345C-0.0526165 27.6927 0.0144497 27.9829 0.213647 28.173ZM18.4368 22.061H18.4378C19.4104 22.0602 20.4341 21.5611 21.3204 20.6561C21.9307 20.033 22.5465 19.1131 22.5465 18.4627C22.5465 17.4602 22.0724 17.1934 21.3549 16.7896L21.3547 16.7894C21.1798 16.6911 20.9815 16.5795 20.7427 16.4358C20.6109 16.3562 20.4455 16.2477 20.2702 16.1327L20.2641 16.1287C19.3525 15.5304 18.6618 15.1068 18.0739 15.1068C17.9362 15.1068 17.806 15.1301 17.6871 15.1759C17.1721 15.3743 16.749 15.9042 16.3398 16.4168L16.3382 16.4188C16.1884 16.6064 15.9749 16.8738 15.8452 16.9934C15.3286 16.8994 14.2392 16.2246 13.0637 15.0491C11.8867 13.8721 11.2117 12.7814 11.119 12.2662C11.2383 12.1363 11.5068 11.9218 11.6956 11.771L11.6988 11.7685C12.2093 11.361 12.7371 10.9395 12.9367 10.426C13.1912 9.76606 12.7247 8.977 11.9841 7.8486C11.8675 7.67107 11.7574 7.50334 11.6775 7.37107C11.5334 7.13153 11.422 6.93346 11.3237 6.75867L11.3234 6.75816C10.9195 6.04044 10.6527 5.56628 9.6501 5.56628C8.99938 5.56628 8.07936 6.18168 7.45617 6.79148C6.55043 7.6779 6.05165 8.70211 6.05165 9.67595C6.05337 12.3209 7.52952 15.3541 10.1016 17.9977L10.115 18.0111C12.7587 20.5832 15.7919 22.0594 18.4368 22.061Z" fill="black" />
+                </svg></a> -->
+            <a href="https://t.me/+79923200696"><svg width="45" height="40" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.9746 0.166626C29.1449 -0.365365 30.276 0.400286 29.9399 2.12373L29.8964 2.31914L25.3711 23.6769C25.0689 25.1287 24.2177 25.524 23.034 24.9423L22.8706 24.8569L13.4107 17.4204C12.9341 17.0458 12.8978 16.3369 13.3334 15.9155L24.5446 5.07178C25.0779 4.59763 24.4875 4.35413 23.7877 4.71932L23.6765 4.7821L7.9581 14.4193C7.712 14.5702 7.41271 14.6074 7.13717 14.5213L1.06991 12.6256C-0.349875 12.19 -0.410584 11.2323 1.21314 10.511L1.40051 10.4319L27.9746 0.166626Z" fill="black" />
+                </svg></a>
+            <a href="https://vk.com/kryarru"><svg width="50" height="45" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0899 10.9126C26.1913 10.9715 26.2551 11.0114 26.3214 11.0467C30.6461 13.3477 33.4916 16.8645 34.9381 21.5303C35.0476 21.8835 35.0414 21.8866 34.6725 21.8867C32.8262 21.8871 30.9798 21.8828 29.1336 21.8917C28.8967 21.893 28.7931 21.815 28.7138 21.5906C27.8213 19.0633 26.3296 16.9915 24.046 15.5365C22.8462 14.7719 21.5328 14.309 20.1253 14.1103C19.7894 14.0628 19.7608 14.0874 19.7607 14.434C19.7602 16.7844 19.7605 19.135 19.7602 21.4854C19.7602 21.8861 19.7594 21.886 19.3486 21.8869C16.5981 21.8927 13.9118 21.5258 11.3449 20.4874C7.58903 18.9678 4.83144 16.3505 2.93141 12.8006C1.61421 10.3396 0.85104 7.69842 0.417916 4.9534C0.176555 3.42386 0.0444461 1.88439 0.000447983 0.336341C-0.00709455 0.07201 0.0796445 -0.00112967 0.333691 1.31335e-05C2.11156 0.00812707 3.88965 0.00367012 5.66752 0.00492721C5.99619 0.00515577 5.99962 0.015441 6.01024 0.357255C6.09504 3.06365 6.46771 5.71896 7.44161 8.26365C8.15929 10.139 9.16279 11.833 10.6528 13.207C11.5365 14.022 12.5342 14.6527 13.6844 15.0269C14.1093 15.1651 14.1115 15.1646 14.1115 14.7277C14.1117 9.95832 14.1116 5.18904 14.1117 0.419766C14.1117 0.00504148 14.1122 0.00424152 14.5374 0.00424152C16.1359 0.0037844 17.7343 0.0037844 19.3328 0.00424152C19.7599 0.00424152 19.7603 0.00504151 19.7603 0.44468C19.7604 3.05154 19.7603 5.6584 19.7605 8.26525C19.7605 8.66421 19.7668 8.67141 20.1657 8.59358C21.4839 8.33634 22.6175 7.70059 23.6352 6.85286C25.7136 5.12139 27.1216 2.93531 27.962 0.374168C28.0827 0.00652716 28.0782 0.00424152 28.4748 0.00424152C30.1074 0.00389868 31.7401 0.00355584 33.3727 0.00469864C33.7192 0.00492721 33.728 0.013384 33.6594 0.351312C33.1592 2.81372 32.0613 4.99317 30.508 6.95137C29.3088 8.4633 27.9126 9.76199 26.2681 10.7838C26.2184 10.8147 26.1729 10.8523 26.0899 10.9126Z" fill="black" />
+                </svg></a>
+        </div>
+        <div class="footer__copyright">
+            <span class="js-copyright-year">2023</span> © Красный Яр. Территория твоего бизнеса.
+            <script>
+						window.onload = () => document.querySelector('.js-copyright-year').innerText = new Date().getFullYear();
+					</script>
+        </div>
+        <a href="/agreement/#tab-0-1" class="footer__policy">
+            Политика и согласие
+        </a>
+        <a target="_blank" href="https://websalt.ru/" class="footer__salt">
+            <span>Создание сайта</span>
+            <img src="/local/templates/main/img/logo/salt.png" alt="">
+        </a>
+    </div>
+</footer>
+
+</div>
+
+
+
+
+<div class="popup popup-get-call">
+    <div class="popup__wrap">
+        <div class="popup__close">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.0663 0L0 2.0663L11.9337 14L0 25.9337L2.0663 28L14 16.0663L25.9337 28L28 25.9337L16.0663 14L28 2.0663L25.9337 0L14 11.9337L2.0663 0Z" fill="black" />
+            </svg>
+        </div>
+        <div class="popup__title">Заказать<br>обратный звонок</div>
+        <div class="popup__content">
+            <form class="form" action="#" method="post">
+                <input type="hidden" name="action" value="feedback">
+                <div class="form__wrap">
+
+                    <div class="field field-text">
+                        <div class="field-text__wrap">
+                            <input data-rule="" name="name" type="text" placeholder="Ваше имя *"  />
+                            <div class="field-text__wrap_clear">
+                                <img src="/local/templates/main/img/ui/clear_12x12.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="error">Необходимо заполнить «Имя»</div>
+                    </div>
+
+                    <div class="field field-text phone">
+                        <div class="field-text__wrap">
+                            <input data-rule="" name="phone" type="text" placeholder="Телефон *"  />
+                            <div class="field-text__wrap_clear">
+                                <img src="/local/templates/main/img/ui/clear_12x12.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="error">Необходимо заполнить «Телефон»</div>
+                    </div>
+
+                    <div class="field field-text email">
+                        <div class="field-text__wrap">
+                            <input name="email" type="email" placeholder="E-mail" value="" />
+                            <div class="field-text__wrap_clear">
+                                <img src="/local/templates/main/img/ui/clear_12x12.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field field-text">
+                        <div class="field-text__wrap">
+                            <input name="region" type="text" placeholder="Ваш регион" />
+                            <div class="field-text__wrap_clear">
+                                <img src="/local/templates/main/img/ui/clear_12x12.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field field-text">
+                        <div class="field-text__wrap">
+                            <input name="comment" type="text" placeholder="Комментарий" />
+                            <div class="field-text__wrap_clear">
+                                <img src="/local/templates/main/img/ui/clear_12x12.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                    <button class="btn btn-get-call-send" type="submit">Отправить</button>
+                    <div class="field-chb field-chb-inline">
+                        <input data-rule="" id="chb-p1" type="checkbox" name="acept" value="1" checked>
+                        <label for="chb-p1"><span>Я даю <a target="_blank" href="/agreement/#tab-0-1">согласие</a> на обработку персональных данных</span></label>
+                        <div class="error">Обязательное поле</div>
+                    </div>
+
+                    <div class="field-chb field-chb-inline">
+                        <input id="chb-p2" type="checkbox" name="acept" value="1" checked>
+                        <label for="chb-p2"><span>Я даю <a target="_blank" href="/agreement/#tab-0-3">согласие</a> на получение рассылок</span></label>
+                    </div>
+                
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup-get-call-sended">
+    <div class="popup__wrap">
+        <div class="popup__close">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.0663 0L0 2.0663L11.9337 14L0 25.9337L2.0663 28L14 16.0663L25.9337 28L28 25.9337L16.0663 14L28 2.0663L25.9337 0L14 11.9337L2.0663 0Z" fill="black" />
+            </svg>
+        </div>
+        <div class="popup__title">Спасибо<br>за обращение</div>
+        <div class="popup__content">
+            <div class="popup__text">
+                Наш специалист скоро свяжется с вами для уточнения деталей
+            </div>
+
+            <button class="btn btn-popup-ok" type="submit">Ок</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-share">
+    <div class="popup__wrap">
+        <div class="popup__close">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.0663 0L0 2.0663L11.9337 14L0 25.9337L2.0663 28L14 16.0663L25.9337 28L28 25.9337L16.0663 14L28 2.0663L25.9337 0L14 11.9337L2.0663 0Z" fill="black" />
+            </svg>
+        </div>
+        <div class="popup__title">Поделиться</div>
+        <div class="popup__content">
+            <div class="popup__text">
+                <!-- uSocial -->
+                <script async src="https://usocial.pro/usocial/usocial.js?uid=245cd9680af94764&v=6.1.5" data-script="usocial" charset="utf-8"></script>
+                <div class="uSocial-Share" data-pid="73652a856f6281d38db39f0beb9f609a" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,mobile_position_right" data-social="vk,ok,telegram"></div>
+                <!-- /uSocial -->
+            </div>   
+
+            <div class="field field-text field-text__labled">
+                <div class="field-text__wrap">
+                    <label class="field-text__label">Ссылка на страницу</label>
+                    <input class="url" name="url" type="text" placeholder=" " readonly />
+                </div>
+            </div>
+
+            <div class="popup__actions">
+                <button class="btn btn-copy-link" type="submit">Скопировать ссылку</button>
+            </div>            
+            
+        </div>
+    </div>
+</div>
+
+<sidebar class="sidebar">
+    <div class="sidebar__tab">
+        <div class="sidebar__tab-bg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="67" height="106" viewBox="0 0 67 106" fill="none">
+                <path opacity="0.802827" fill-rule="evenodd" clip-rule="evenodd" d="M0 24.0369C0 19.6157 2.90321 15.7193 7.13964 14.4547L54.1396 0.424849C60.5529 -1.48956 67 3.31413 67 10.007V95.1648C67 101.858 60.5529 106.661 54.1396 104.747L7.13965 90.7172C2.90322 89.4526 0 85.5561 0 81.135V24.0369Z" fill="black" />
+            </svg>
+        </div>
+
+        <div class="sidebar__toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="sidebar__wrap">
+        <nav class="desktop-menu">
+            <div class="desktop-menu__name">
+                Первая очередь
+            </div>
+            <ul class="desktop-menu__list">
+                <li class="desktop-menu__item">
+                    <a href="/rent/" class="desktop-menu__link">
+                        Аренда
+                    </a>
+                </li>
+                <li class="desktop-menu__item">
+                    <a href="/services/" class="desktop-menu__link">
+                        Услуги УК
+                    </a>
+                </li>
+            </ul>
+            <div class="desktop-menu__name">
+                Вторая очередь
+            </div>
+            <ul class="desktop-menu__list">
+                <li class="desktop-menu__item">
+                    <a href="/construction/" class="desktop-menu__link">
+                        Строительство
+                    </a>
+                </li>
+            </ul>
+            <div class="desktop-menu__name">
+                Третья очередь
+            </div>
+            <ul class="desktop-menu__list">
+                <li class="desktop-menu__item">
+                    <span class="desktop-menu__link desktop-menu__link_disabled">
+                        Скоро начнем работы
+                    </span>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar__contacts">
+            <a href="tel:+79240424900" class="sidebar__phone">+7 924 042 49 00</a>
+
+            <!-- <div class="sidebar__call-btn">
+                <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9528 16.5676L12.0289 14.1196C11.3463 13.2482 10.0637 13.103 9.21556 13.8084L8.24328 14.6175C8.03642 14.7835 7.70543 14.7627 7.51925 14.576C5.69882 12.5429 4.41625 10.157 3.7129 7.52226C3.65084 7.25256 3.79565 6.96211 4.06457 6.87913L5.24371 6.48495C6.29873 6.13226 6.85728 4.99121 6.5056 3.93315L5.47127 1.02868C5.16097 0.136587 4.12663 -0.257592 3.29916 0.178079C0.175474 1.87927 -1.7277 5.57211 2.24414 12.8748C6.21599 20.1775 10.3533 20.5509 13.477 18.8497C14.3045 18.4141 14.532 17.3145 13.9528 16.5676Z" fill="white" />
+                </svg>
+                <span>
+                    Заказать звонок
+                </span>
+            </div> -->
+
+            <a href="mailto:red-yar@mail.ru" class="sidebar__mail">red-yar@mail.ru</a>
+
+            <div class="sidebar__soc">
+                <!-- <a href="#" class="sidebar__soc-icon"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.213647 28.173C0.344606 28.298 0.516066 28.3639 0.690148 28.3639C0.78095 28.3639 0.87251 28.3459 0.959448 28.3092L6.88632 25.7953C9.14897 27.2035 11.7361 27.946 14.3927 27.9461H14.393C18.0579 27.9461 21.4868 26.5357 24.0475 23.975C29.428 18.5945 29.3185 9.73046 23.8035 4.21544C21.0851 1.49705 17.4968 0 13.6997 0C10.0341 0 6.60501 1.41046 4.04394 3.97153C1.77135 6.24412 0.376897 9.27521 0.117602 12.5065C-0.128376 15.5721 0.652061 18.6745 2.31864 21.2831L0.0428769 27.4345C-0.0526165 27.6927 0.0144497 27.9829 0.213647 28.173ZM18.4368 22.061H18.4378C19.4104 22.0602 20.4341 21.5611 21.3204 20.6561C21.9307 20.033 22.5465 19.1131 22.5465 18.4627C22.5465 17.4602 22.0724 17.1934 21.3549 16.7896L21.3547 16.7894C21.1798 16.6911 20.9815 16.5795 20.7427 16.4358C20.6109 16.3562 20.4455 16.2477 20.2702 16.1327L20.2641 16.1287C19.3525 15.5304 18.6618 15.1068 18.0739 15.1068C17.9362 15.1068 17.806 15.1301 17.6871 15.1759C17.1721 15.3743 16.749 15.9042 16.3398 16.4168L16.3382 16.4188C16.1884 16.6064 15.9749 16.8738 15.8452 16.9934C15.3286 16.8994 14.2392 16.2246 13.0637 15.0491C11.8867 13.8721 11.2117 12.7814 11.119 12.2662C11.2383 12.1363 11.5068 11.9218 11.6956 11.771L11.6988 11.7685C12.2093 11.361 12.7371 10.9395 12.9367 10.426C13.1912 9.76606 12.7247 8.977 11.9841 7.8486C11.8675 7.67107 11.7574 7.50334 11.6775 7.37107C11.5334 7.13153 11.422 6.93346 11.3237 6.75867L11.3234 6.75816C10.9195 6.04044 10.6527 5.56628 9.6501 5.56628C8.99938 5.56628 8.07936 6.18168 7.45617 6.79148C6.55043 7.6779 6.05165 8.70211 6.05165 9.67595C6.05337 12.3209 7.52952 15.3541 10.1016 17.9977L10.115 18.0111C12.7587 20.5832 15.7919 22.0594 18.4368 22.061Z" fill="white" />
+                    </svg></a> -->
+                <a href="https://t.me/+79923200696" class="sidebar__soc-icon"><svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.9746 0.166626C29.1449 -0.365365 30.276 0.400286 29.9399 2.12373L29.8964 2.31914L25.3711 23.6769C25.0689 25.1287 24.2177 25.524 23.034 24.9423L22.8706 24.8569L13.4107 17.4204C12.9341 17.0458 12.8978 16.3369 13.3334 15.9155L24.5446 5.07178C25.0779 4.59763 24.4875 4.35413 23.7877 4.71932L23.6765 4.7821L7.9581 14.4193C7.712 14.5702 7.41271 14.6074 7.13717 14.5213L1.06991 12.6256C-0.349875 12.19 -0.410584 11.2323 1.21314 10.511L1.40051 10.4319L27.9746 0.166626Z" fill="white" />
+                    </svg></a>
+                <a href="https://vk.com/kryarru" class="sidebar__soc-icon"><svg width="35" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0899 10.9126C26.1913 10.9715 26.2551 11.0114 26.3214 11.0467C30.6461 13.3477 33.4916 16.8645 34.9381 21.5303C35.0476 21.8835 35.0414 21.8866 34.6725 21.8867C32.8262 21.8871 30.9798 21.8828 29.1336 21.8917C28.8967 21.893 28.7931 21.815 28.7138 21.5906C27.8213 19.0633 26.3296 16.9915 24.046 15.5365C22.8462 14.7719 21.5328 14.309 20.1253 14.1103C19.7894 14.0628 19.7608 14.0874 19.7607 14.434C19.7602 16.7844 19.7605 19.135 19.7602 21.4854C19.7602 21.8861 19.7594 21.886 19.3486 21.8869C16.5981 21.8927 13.9118 21.5258 11.3449 20.4874C7.58903 18.9678 4.83144 16.3505 2.93141 12.8006C1.61421 10.3396 0.85104 7.69842 0.417916 4.9534C0.176555 3.42386 0.0444461 1.88439 0.000447983 0.336341C-0.00709455 0.07201 0.0796445 -0.00112967 0.333691 1.31335e-05C2.11156 0.00812707 3.88965 0.00367012 5.66752 0.00492721C5.99619 0.00515577 5.99962 0.015441 6.01024 0.357255C6.09504 3.06365 6.46771 5.71896 7.44161 8.26365C8.15929 10.139 9.16279 11.833 10.6528 13.207C11.5365 14.022 12.5342 14.6527 13.6844 15.0269C14.1093 15.1651 14.1115 15.1646 14.1115 14.7277C14.1117 9.95832 14.1116 5.18904 14.1117 0.419766C14.1117 0.00504148 14.1122 0.00424152 14.5374 0.00424152C16.1359 0.0037844 17.7343 0.0037844 19.3328 0.00424152C19.7599 0.00424152 19.7603 0.00504151 19.7603 0.44468C19.7604 3.05154 19.7603 5.6584 19.7605 8.26525C19.7605 8.66421 19.7668 8.67141 20.1657 8.59358C21.4839 8.33634 22.6175 7.70059 23.6352 6.85286C25.7136 5.12139 27.1216 2.93531 27.962 0.374168C28.0827 0.00652716 28.0782 0.00424152 28.4748 0.00424152C30.1074 0.00389868 31.7401 0.00355584 33.3727 0.00469864C33.7192 0.00492721 33.728 0.013384 33.6594 0.351312C33.1592 2.81372 32.0613 4.99317 30.508 6.95137C29.3088 8.4633 27.9126 9.76199 26.2681 10.7838C26.2184 10.8147 26.1729 10.8523 26.0899 10.9126" fill="white" />
+                    </svg></a>
+                <!-- <a href="#" class="sidebar__soc-icon"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20913 16.2273C7.24621 16.6554 7.27638 17.3439 7.37338 18.0226C7.47145 18.7072 7.60487 19.3907 7.78205 20.0589C7.90276 20.5145 8.09739 20.9575 8.311 21.38C8.49551 21.7451 8.76796 21.8052 9.11908 21.566C9.59199 21.2437 10.0379 20.8812 10.4884 20.527C10.5962 20.4425 10.6798 20.3632 10.8264 20.4473C11.1058 20.6074 11.3905 20.7592 11.6744 20.9116C12.5637 21.3886 13.5281 21.6171 14.5224 21.6244C15.1617 21.6291 15.8068 21.5446 16.4396 21.3666C17.4827 21.073 18.4216 20.5992 19.2467 19.9056C20.3287 18.996 21.0859 17.8698 21.5317 16.5185C22.0716 14.8819 21.9729 13.269 21.3457 11.7033C20.7762 10.2809 19.8183 9.14107 18.5199 8.29549C17.6154 7.70683 16.6276 7.31648 15.5721 7.19491C14.6312 7.08628 13.6768 7.0921 12.7329 7.34493C11.5989 7.64863 10.6167 8.1972 9.77283 8.99515C8.74166 9.97049 8.08015 11.1806 7.68441 12.529C7.35613 13.6475 7.23069 14.8022 7.20913 16.2273M0 14.5049C0.0288831 13.2347 0.180627 11.9824 0.498556 10.7564C0.995389 8.83909 1.87158 7.10697 3.0989 5.54922C4.22447 4.12037 5.58758 2.96462 7.14576 2.04424C8.05342 1.50839 9.01411 1.07277 10.0265 0.75851C11.234 0.383245 12.4551 0.0920434 13.7277 0.0635914C14.2676 0.0515209 14.8106 -0.0267221 15.3464 0.00948951C16.4166 0.0819128 17.4777 0.219 18.521 0.508046C19.7601 0.85141 20.9305 1.33919 22.029 1.99746C23.6613 2.97561 25.0356 4.24086 26.1702 5.77123C27.1374 7.07571 27.8493 8.50974 28.3367 10.0511C28.7037 11.2131 28.873 12.4137 28.9697 13.6313C29.0549 14.6991 28.9482 15.7493 28.8016 16.7944C28.6628 17.7829 28.3867 18.7436 28.0123 19.6767C27.5999 20.7049 27.0925 21.6781 26.4606 22.5855C25.762 23.5884 24.9496 24.4879 24.0193 25.2856C22.6167 26.4884 21.0448 27.3838 19.2943 27.9696C18.1761 28.3438 17.035 28.6061 15.8529 28.6606C15.2276 28.6893 14.5982 28.7626 13.9775 28.7193C12.9207 28.6453 11.8707 28.5246 10.8691 28.105C10.0509 27.762 9.31867 27.2887 8.59142 26.8013C8.42459 26.6895 8.34915 26.7091 8.23103 26.8339C7.43244 27.6773 6.43597 28.178 5.35027 28.5542C4.65104 28.7964 3.94405 28.7641 3.24051 28.7255C2.73182 28.6975 2.18973 28.2033 2.14381 27.5777C2.10459 27.0462 2.11579 26.5071 2.03152 25.9834C1.88926 25.0979 1.70669 24.2178 1.5086 23.3427C1.33142 22.5609 1.08635 21.7942 0.914775 21.0114C0.674873 19.9168 0.452861 18.8173 0.267276 17.7127C0.164892 17.104 0.151097 16.4804 0.100875 15.8633C0.0642325 15.4106 0.0334095 14.9576 0 14.5049" fill="white" />
+                    </svg></a> -->
+            </div>
+        </div>
+
+    </div>
+</sidebar>
+<div class="preloader hide"><img src="/local/templates/main/img/ui/loader.png" alt=""></div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+ <script src="https://unpkg.com/imask"></script>
+<script src="/local/templates/main/js/app.js"></script>
+<script src="/local/templates/main/js/popups.js"></script>
+<script src="/local/templates/main/js/swipers.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="about">
@@ -23,7 +24,7 @@
   </div>
 
   <!-- Page Hero -->
-  <section class="page-hero">
+  <section class="page-hero page-hero--image" style="background-image: url('assets/img/park-aerial.jpg');">
     <div class="container">
       <div class="page-hero__content fade-up">
         <span class="section__tag">О парке</span>
@@ -44,39 +45,59 @@
 
       <div class="timeline fade-up">
         <div class="timeline__item">
+          <div class="timeline__dot"></div>
           <div class="timeline__year">2012</div>
-          <div class="timeline__content">
-            <h3 class="timeline__title">Основание парка</h3>
-            <p class="timeline__text">Создание индустриального парка на территории бывшего завода «Сибэлектросталь». Начало реконструкции производственных корпусов и модернизации инженерных сетей.</p>
-          </div>
+          <p class="timeline__text">Основание парка. Создание индустриального парка на территории бывшего завода «Сибэлектросталь». Начало реконструкции производственных корпусов и модернизации инженерных сетей.</p>
         </div>
         <div class="timeline__item">
+          <div class="timeline__dot"></div>
           <div class="timeline__year">2013</div>
-          <div class="timeline__content">
-            <h3 class="timeline__title">Первый резидент</h3>
-            <p class="timeline__text">Компания «Спецтехномаш» стала первым резидентом парка, разместив производство специализированной техники.</p>
-          </div>
+          <p class="timeline__text">Первый резидент. Компания «Спецтехномаш» стала первым резидентом парка, разместив производство специализированной техники.</p>
         </div>
         <div class="timeline__item">
+          <div class="timeline__dot"></div>
           <div class="timeline__year">2017</div>
-          <div class="timeline__content">
-            <h3 class="timeline__title">Расширение территории</h3>
-            <p class="timeline__text">Масштабное расширение парка: введены в эксплуатацию новые производственные корпуса, модернизирована транспортная инфраструктура.</p>
-          </div>
+          <p class="timeline__text">Расширение территории. Масштабное расширение парка: введены в эксплуатацию новые производственные корпуса, модернизирована транспортная инфраструктура.</p>
         </div>
         <div class="timeline__item">
+          <div class="timeline__dot"></div>
           <div class="timeline__year">2022</div>
-          <div class="timeline__content">
-            <h3 class="timeline__title">Сертификация Минпромторга</h3>
-            <p class="timeline__text">Парк включён в реестр промышленных парков Минпромторга России и получил сертификат соответствия ГОСТ Р 56301-2014.</p>
-          </div>
+          <p class="timeline__text">Сертификация Минпромторга. Парк включён в реестр промышленных парков Минпромторга России и получил сертификат соответствия ГОСТ Р 56301-2014.</p>
         </div>
         <div class="timeline__item">
+          <div class="timeline__dot"></div>
           <div class="timeline__year">2025</div>
-          <div class="timeline__content">
-            <h3 class="timeline__title">9 резидентов</h3>
-            <p class="timeline__text">Парк вышел на стабильную загрузку — 9 компаний-резидентов, более 1 300 рабочих мест, устойчивый рост производственных показателей.</p>
-          </div>
+          <p class="timeline__text">9 резидентов. Парк вышел на стабильную загрузку — 9 компаний-резидентов, более 1 300 рабочих мест, устойчивый рост производственных показателей.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">Территория</span>
+        <h2 class="section__title">Наш <span class="text-red">парк</span></h2>
+      </div>
+      <div class="gallery fade-up" data-lightbox="gallery" data-delay="100">
+        <div class="gallery__item gallery__item--wide">
+          <img src="assets/img/park-aerial.jpg" alt="Аэросъёмка территории парка" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="assets/img/building-1.jpg" alt="Производственный корпус" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="assets/img/building-2.jpg" alt="Складской комплекс" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="assets/img/building-4.jpg" alt="Офисные помещения" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="assets/img/building-3.jpg" alt="Производственные площади" loading="lazy">
+        </div>
+        <div class="gallery__item">
+          <img src="assets/img/building-5.JPG" alt="Внутри помещений" loading="lazy">
         </div>
       </div>
     </div>
@@ -121,13 +142,25 @@
 
       <div class="management fade-up">
         <div class="management__card">
-          <h3 class="management__name">ООО «Красный Яр»</h3>
-          <p class="management__desc">Управляющая компания обеспечивает полный комплекс услуг для резидентов парка: содержание территории и мест общего пользования, эксплуатация и модернизация инженерной инфраструктуры, круглосуточная охрана и контроль доступа, взаимодействие с ресурсоснабжающими организациями, сопровождение при размещении производства.</p>
-          <ul class="management__services">
-            <li class="management__service">Содержание территории и инфраструктуры</li>
-            <li class="management__service">Эксплуатация инженерных сетей</li>
-            <li class="management__service">Охрана и безопасность</li>
-            <li class="management__service">Сервисные услуги для резидентов</li>
+          <h3 class="management__title">ООО «Красный Яр»</h3>
+          <p class="management__text">Управляющая компания обеспечивает полный комплекс услуг для резидентов парка: содержание территории и мест общего пользования, эксплуатация и модернизация инженерной инфраструктуры, круглосуточная охрана и контроль доступа, взаимодействие с ресурсоснабжающими организациями, сопровождение при размещении производства.</p>
+          <ul class="management__list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Содержание территории и инфраструктуры
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Эксплуатация инженерных сетей
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Охрана и безопасность
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              Сервисные услуги для резидентов
+            </li>
           </ul>
         </div>
       </div>
@@ -142,7 +175,7 @@
         <h2 class="section__title">Сертификаты и достижения</h2>
       </div>
 
-      <div class="cert-grid fade-up">
+      <div class="about__certs fade-up">
         <div class="cert-card">
           <div class="cert-card__icon">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +184,7 @@
             </svg>
           </div>
           <h3 class="cert-card__title">Реестр Минпромторга</h3>
-          <p class="cert-card__text">Включён в реестр промышленных парков Министерства промышленности и торговли Российской Федерации</p>
+          <p class="cert-card__desc">Включён в реестр промышленных парков Министерства промышленности и торговли Российской Федерации</p>
         </div>
         <div class="cert-card">
           <div class="cert-card__icon">
@@ -161,7 +194,7 @@
             </svg>
           </div>
           <h3 class="cert-card__title">ГОСТ Р 56301-2014</h3>
-          <p class="cert-card__text">Сертификат соответствия требованиям национального стандарта для индустриальных парков</p>
+          <p class="cert-card__desc">Сертификат соответствия требованиям национального стандарта для индустриальных парков</p>
         </div>
         <div class="cert-card">
           <div class="cert-card__icon">
@@ -172,7 +205,7 @@
             </svg>
           </div>
           <h3 class="cert-card__title">29 место в рейтинге «Эксперт»</h3>
-          <p class="cert-card__text">Входит в топ-30 лучших индустриальных парков России по версии рейтингового агентства «Эксперт»</p>
+          <p class="cert-card__desc">Входит в топ-30 лучших индустриальных парков России по версии рейтингового агентства «Эксперт»</p>
         </div>
         <div class="cert-card">
           <div class="cert-card__icon">
@@ -183,7 +216,7 @@
             </svg>
           </div>
           <h3 class="cert-card__title">Более 14 лет работы</h3>
-          <p class="cert-card__text">Стабильная работа и развитие парка с 2012 года — проверенный партнёр для вашего бизнеса</p>
+          <p class="cert-card__desc">Стабильная работа и развитие парка с 2012 года — проверенный партнёр для вашего бизнеса</p>
         </div>
       </div>
     </div>
@@ -203,5 +236,6 @@
   <div id="site-footer"></div>
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

@@ -31,6 +31,40 @@ if (burger && nav) {
 }
 
 // ============================
+// Callback modal
+// ============================
+const callbackBtn = document.getElementById('callbackBtn');
+const callbackModal = document.getElementById('callbackModal');
+const modalClose = document.getElementById('modalClose');
+
+function openModal() {
+  if (callbackModal) {
+    callbackModal.classList.add('modal-overlay--open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal() {
+  if (callbackModal) {
+    callbackModal.classList.remove('modal-overlay--open');
+    document.body.style.overflow = '';
+  }
+}
+
+if (callbackBtn) callbackBtn.addEventListener('click', openModal);
+if (modalClose) modalClose.addEventListener('click', closeModal);
+
+if (callbackModal) {
+  callbackModal.addEventListener('click', (e) => {
+    if (e.target === callbackModal) closeModal();
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
+// ============================
 // Intersection Observer for fade-up animations
 // ============================
 const observerOptions = {
@@ -134,6 +168,12 @@ document.querySelectorAll('form').forEach(form => {
       btn.textContent = 'Заявка отправлена!';
       btn.style.background = '#22c55e';
       btn.style.borderColor = '#22c55e';
+
+      // Close modal if callback form
+      if (form.id === 'callbackForm') {
+        setTimeout(() => closeModal(), 1500);
+      }
+
       setTimeout(() => {
         form.reset();
         btn.textContent = originalText;
@@ -185,3 +225,83 @@ if (filterBtns.length > 0 && residentCards.length > 0) {
     });
   });
 }
+
+// ============================
+// Toast notification
+// ============================
+function showToast(message) {
+  const existing = document.querySelector('.toast');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(() => {
+    toast.classList.add('toast--visible');
+  });
+
+  setTimeout(() => {
+    toast.classList.remove('toast--visible');
+    setTimeout(() => toast.remove(), 300);
+  }, 2500);
+}
+
+// ============================
+// Share / Copy URL button
+// ============================
+const shareBtn = document.createElement('button');
+shareBtn.className = 'share-btn';
+shareBtn.setAttribute('aria-label', 'Поделиться');
+shareBtn.innerHTML =
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
+  '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>' +
+  '<line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>';
+document.body.appendChild(shareBtn);
+
+shareBtn.addEventListener('click', () => {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      showToast('Ссылка скопирована');
+    });
+  } else {
+    // Fallback for older browsers
+    const input = document.createElement('input');
+    input.value = window.location.href;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    input.remove();
+    showToast('Ссылка скопирована');
+  }
+});
+
+// ============================
+// Cookie consent banner
+// ============================
+(function() {
+  if (localStorage.getItem('cookieConsent')) return;
+
+  const banner = document.createElement('div');
+  banner.className = 'cookie-banner';
+  banner.innerHTML =
+    '<div class="cookie-banner__text">' +
+      'Мы используем файлы cookie для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с ' +
+      '<a href="#">политикой конфиденциальности</a>.' +
+    '</div>' +
+    '<button class="btn btn--primary btn--sm cookie-banner__accept">Принять</button>';
+  document.body.appendChild(banner);
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      banner.classList.add('cookie-banner--visible');
+    });
+  });
+
+  banner.querySelector('.cookie-banner__accept').addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', '1');
+    banner.classList.remove('cookie-banner--visible');
+    setTimeout(() => banner.remove(), 300);
+  });
+})();
