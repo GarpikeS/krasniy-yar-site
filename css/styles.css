@@ -1289,6 +1289,129 @@ select.form-input {
 }
 
 /* ============================
+   Premise Detail Page
+   ============================ */
+.premise-detail {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  align-items: start;
+}
+
+.premise-detail__plan {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.premise-detail__plan svg {
+  width: 100%;
+  height: auto;
+}
+
+.premise-detail__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.premise-detail__gallery img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.premise-sidebar {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  position: sticky;
+  top: 96px;
+}
+
+.premise-sidebar__format {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+
+.premise-sidebar__badge {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.premise-sidebar__area {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.premise-sidebar__price {
+  font-size: 1rem;
+  color: var(--gray-400);
+  margin-bottom: 20px;
+}
+
+.premise-sidebar__specs {
+  margin-bottom: 20px;
+}
+
+.premise-sidebar__spec {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.875rem;
+}
+
+.premise-sidebar__spec span:first-child {
+  color: var(--gray-400);
+}
+
+.premise-sidebar__spec span:last-child {
+  font-weight: 600;
+}
+
+.premise-sidebar__back {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.premise-sidebar__back:hover {
+  color: var(--red);
+}
+
+@media (max-width: 768px) {
+  .premise-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .premise-detail__gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .premise-sidebar {
+    position: static;
+  }
+}
+
+/* ============================
    Animations
    ============================ */
 @keyframes fadeInUp {
@@ -2291,15 +2414,18 @@ body {
 
 .resident-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 24px;
+  text-align: center;
+  gap: 12px;
+  padding: 24px 16px;
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
   transition: var(--transition);
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 .resident-card:hover {
@@ -2310,8 +2436,8 @@ body {
 
 .resident-card__logo {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   background: var(--white);
   border: 1px solid var(--gray-100);
   border-radius: var(--radius-md);
@@ -2372,7 +2498,8 @@ body {
 
 .resident-card__meta {
   display: flex;
-  gap: 12px;
+  justify-content: center;
+  gap: 16px;
   font-size: 0.75rem;
   color: var(--gray-400);
 }
@@ -2385,9 +2512,7 @@ body {
 }
 
 .resident-card__arrow {
-  flex-shrink: 0;
-  color: var(--gray-300);
-  transition: var(--transition);
+  display: none;
 }
 
 .resident-card:hover .resident-card__arrow {
