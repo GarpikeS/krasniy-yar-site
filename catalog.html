@@ -86,150 +86,93 @@
       </div>
 
       <!-- Schematic layouts -->
-      <div class="section__header fade-up" style="margin-top:60px">
+      <div class="section__header fade-up" style="margin-top:48px">
         <h2 class="section__title">Планировки помещений</h2>
-        <p class="section__desc">Типовые схемы этажей с возможностью объединения секций</p>
+        <p class="section__desc">Нажмите на планировку для подробной информации</p>
       </div>
 
       <div class="schematics fade-up" data-delay="100">
 
-        <div class="schematic-card">
-          <div class="schematic-card__header">Производственное помещение</div>
+        <a href="premises/mini.html" class="schematic-card schematic-card--link">
+          <div class="schematic-card__header">MINI — от 480 м²</div>
           <div class="schematic-card__plan">
             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="396" height="246" fill="#f8f8f8" stroke="#2a2a2a" stroke-width="2" rx="2"/>
-              <!-- Columns -->
-              <circle cx="70" cy="60" r="4" fill="#8a8a8a"/><circle cx="200" cy="60" r="4" fill="#8a8a8a"/>
-              <circle cx="330" cy="60" r="4" fill="#8a8a8a"/><circle cx="70" cy="130" r="4" fill="#8a8a8a"/>
-              <circle cx="200" cy="130" r="4" fill="#8a8a8a"/><circle cx="330" cy="130" r="4" fill="#8a8a8a"/>
-              <circle cx="70" cy="200" r="4" fill="#8a8a8a"/><circle cx="200" cy="200" r="4" fill="#8a8a8a"/>
-              <circle cx="330" cy="200" r="4" fill="#8a8a8a"/>
-              <!-- Main hall -->
+              <circle cx="70" cy="50" r="3" fill="#8a8a8a"/><circle cx="200" cy="50" r="3" fill="#8a8a8a"/>
+              <circle cx="330" cy="50" r="3" fill="#8a8a8a"/><circle cx="70" cy="125" r="3" fill="#8a8a8a"/>
+              <circle cx="200" cy="125" r="3" fill="#8a8a8a"/><circle cx="330" cy="125" r="3" fill="#8a8a8a"/>
+              <circle cx="70" cy="200" r="3" fill="#8a8a8a"/><circle cx="200" cy="200" r="3" fill="#8a8a8a"/>
+              <circle cx="330" cy="200" r="3" fill="#8a8a8a"/>
               <rect x="20" y="20" width="360" height="180" fill="none" stroke="#d41919" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
-              <text x="200" y="115" text-anchor="middle" fill="#d41919" font-size="14" font-weight="600">Производственный зал</text>
-              <!-- Dims -->
-              <text x="200" y="215" text-anchor="middle" fill="#4a4a4a" font-size="11">60 × 30 м</text>
-              <!-- Gate -->
+              <text x="200" y="105" text-anchor="middle" fill="#d41919" font-size="14" font-weight="600">Производственный зал</text>
+              <text x="200" y="125" text-anchor="middle" fill="#4a4a4a" font-size="11">480 м² (30 x 16 м)</text>
               <rect x="160" y="198" width="80" height="6" fill="#d41919" rx="1"/>
-              <text x="200" y="242" text-anchor="middle" fill="#4a4a4a" font-size="10">Ворота 4×4 м</text>
-              <!-- Height -->
-              <text x="380" y="130" text-anchor="end" fill="#8a8a8a" font-size="10" transform="rotate(-90,380,130)">h = 8 м</text>
+              <text x="200" y="235" text-anchor="middle" fill="#4a4a4a" font-size="10">Ворота 4x4 м</text>
             </svg>
           </div>
           <div class="schematic-card__specs">
-            <span>Шаг колонн 6×6 м</span>
+            <span>Шаг колонн 6x6 м</span>
             <span>Высота 8 м</span>
             <span>Нагрузка 3 т/м²</span>
           </div>
-        </div>
+        </a>
 
-        <div class="schematic-card">
-          <div class="schematic-card__header">Складское помещение</div>
+        <a href="premises/midi.html" class="schematic-card schematic-card--link schematic-card--featured">
+          <div class="schematic-card__header">MIDI — от 960 м² <span class="schematic-card__badge">Популярный</span></div>
           <div class="schematic-card__plan">
             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="396" height="246" fill="#f8f8f8" stroke="#2a2a2a" stroke-width="2" rx="2"/>
-              <!-- Rack rows -->
-              <rect x="30" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
-              <rect x="80" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
-              <rect x="150" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
-              <rect x="200" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
-              <rect x="270" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
-              <rect x="320" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
-              <!-- Aisles label -->
-              <text x="55" y="115" text-anchor="middle" fill="#4a4a4a" font-size="9" transform="rotate(-90,55,115)">проезд</text>
-              <text x="125" y="115" text-anchor="middle" fill="#4a4a4a" font-size="9" transform="rotate(-90,125,115)">проезд</text>
-              <text x="245" y="115" text-anchor="middle" fill="#4a4a4a" font-size="9" transform="rotate(-90,245,115)">проезд</text>
-              <!-- Main zone -->
-              <rect x="20" y="20" width="360" height="180" fill="none" stroke="#d41919" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
-              <text x="200" y="215" text-anchor="middle" fill="#4a4a4a" font-size="11">Зона хранения</text>
-              <!-- Gate -->
-              <rect x="160" y="198" width="80" height="6" fill="#d41919" rx="1"/>
-              <text x="200" y="242" text-anchor="middle" fill="#4a4a4a" font-size="10">Ворота 4×4 м</text>
+              <rect x="20" y="20" width="240" height="180" fill="none" stroke="#d41919" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+              <text x="140" y="105" text-anchor="middle" fill="#d41919" font-size="13" font-weight="600">Производственный зал</text>
+              <text x="140" y="123" text-anchor="middle" fill="#4a4a4a" font-size="11">768 м²</text>
+              <circle cx="70" cy="50" r="3" fill="#8a8a8a"/><circle cx="200" cy="50" r="3" fill="#8a8a8a"/>
+              <circle cx="70" cy="125" r="3" fill="#8a8a8a"/><circle cx="200" cy="125" r="3" fill="#8a8a8a"/>
+              <circle cx="70" cy="200" r="3" fill="#8a8a8a"/><circle cx="200" cy="200" r="3" fill="#8a8a8a"/>
+              <rect x="280" y="20" width="100" height="180" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
+              <text x="330" y="100" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Офисный</text>
+              <text x="330" y="116" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">блок</text>
+              <text x="330" y="136" text-anchor="middle" fill="#4a4a4a" font-size="10">192 м²</text>
+              <rect x="100" y="198" width="80" height="6" fill="#d41919" rx="1"/>
+              <text x="140" y="235" text-anchor="middle" fill="#4a4a4a" font-size="10">Ворота 4x4 м</text>
             </svg>
           </div>
           <div class="schematic-card__specs">
-            <span>Стеллажные зоны</span>
+            <span>Офисный блок</span>
             <span>Высота 8 м</span>
-            <span>Пожаротушение</span>
+            <span>Нагрузка 3 т/м²</span>
           </div>
-        </div>
+        </a>
 
-        <div class="schematic-card">
-          <div class="schematic-card__header">Офисный блок</div>
+        <a href="premises/maxi.html" class="schematic-card schematic-card--link">
+          <div class="schematic-card__header">MAXI — от 1920 м²</div>
           <div class="schematic-card__plan">
             <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="396" height="246" fill="#f8f8f8" stroke="#2a2a2a" stroke-width="2" rx="2"/>
-              <!-- Rooms -->
-              <rect x="20" y="20" width="170" height="90" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
-              <text x="105" y="70" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Кабинет 1</text>
-              <rect x="210" y="20" width="170" height="90" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
-              <text x="295" y="70" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Кабинет 2</text>
-              <rect x="20" y="130" width="110" height="90" fill="#f0f0ff" stroke="#4a4a8a" stroke-width="1" rx="2"/>
-              <text x="75" y="180" text-anchor="middle" fill="#4a4a8a" font-size="11" font-weight="500">Переговорная</text>
-              <rect x="150" y="130" width="80" height="90" fill="#f0fff0" stroke="#4a8a4a" stroke-width="1" rx="2"/>
-              <text x="190" y="175" text-anchor="middle" fill="#4a8a4a" font-size="10">Кухня</text>
-              <rect x="250" y="130" width="130" height="90" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
-              <text x="315" y="180" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Open space</text>
-              <!-- Corridor -->
-              <rect x="20" y="110" width="360" height="20" fill="#e8e8e8" rx="1"/>
-              <text x="200" y="124" text-anchor="middle" fill="#4a4a4a" font-size="9">Коридор</text>
+              <rect x="20" y="20" width="240" height="130" fill="none" stroke="#d41919" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+              <text x="140" y="75" text-anchor="middle" fill="#d41919" font-size="12" font-weight="600">Зал 1 — 960 м²</text>
+              <rect x="20" y="150" width="240" height="50" fill="none" stroke="#d41919" stroke-width="1" stroke-dasharray="4,4" rx="2"/>
+              <text x="140" y="180" text-anchor="middle" fill="#b51515" font-size="10">Расширение / зал 2</text>
+              <rect x="280" y="20" width="100" height="100" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
+              <text x="330" y="65" text-anchor="middle" fill="#d41919" font-size="10" font-weight="500">Офисный блок</text>
+              <text x="330" y="80" text-anchor="middle" fill="#4a4a4a" font-size="9">280 м²</text>
+              <rect x="280" y="135" width="100" height="65" fill="#f0f8f0" stroke="#4a8a4a" stroke-width="1" rx="2"/>
+              <text x="330" y="170" text-anchor="middle" fill="#4a8a4a" font-size="10">Техн. блок</text>
+              <circle cx="70" cy="50" r="3" fill="#8a8a8a"/><circle cx="140" cy="50" r="3" fill="#8a8a8a"/>
+              <circle cx="210" cy="50" r="3" fill="#8a8a8a"/><circle cx="70" cy="110" r="3" fill="#8a8a8a"/>
+              <circle cx="140" cy="110" r="3" fill="#8a8a8a"/><circle cx="210" cy="110" r="3" fill="#8a8a8a"/>
+              <rect x="60" y="198" width="60" height="5" fill="#d41919" rx="1"/>
+              <rect x="160" y="198" width="60" height="5" fill="#d41919" rx="1"/>
+              <text x="90" y="230" text-anchor="middle" fill="#4a4a4a" font-size="9">Ворота 1</text>
+              <text x="190" y="230" text-anchor="middle" fill="#4a4a4a" font-size="9">Ворота 2</text>
             </svg>
           </div>
           <div class="schematic-card__specs">
-            <span>2 этаж</span>
-            <span>Кондиционирование</span>
-            <span>Интернет</span>
+            <span>2 ворот</span>
+            <span>Офис + техн. блок</span>
+            <span>до 5 МВт</span>
           </div>
-        </div>
+        </a>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Rent Calculator -->
-  <section class="section section--gray" id="calculator">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">Калькулятор аренды</h2>
-      </div>
-
-      <div class="calculator__body fade-up">
-        <div class="calculator__controls">
-          <div class="form-group">
-            <label class="form-group__label" for="calc-area">Площадь: <span id="calc-area-value">960</span> м²</label>
-            <input type="range" id="calc-area" class="calculator__range" min="100" max="5000" step="50" value="960">
-            <div class="calculator__range-labels">
-              <span>100 м²</span>
-              <span>5000 м²</span>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-group__label" for="calc-format">Формат помещения</label>
-            <select id="calc-format" class="form-input">
-              <option value="MINI">MINI — 350 руб/м²</option>
-              <option value="MIDI" selected>MIDI — 320 руб/м²</option>
-              <option value="MAXI">MAXI — 290 руб/м²</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="calculator__result" id="calc-result">
-          <div class="calculator__result-row">
-            <span class="calculator__result-label">Площадь</span>
-            <span class="calculator__result-value" id="calc-result-area">960 м²</span>
-          </div>
-          <div class="calculator__result-row">
-            <span class="calculator__result-label">Тариф</span>
-            <span class="calculator__result-value" id="calc-result-tariff">320 руб/м²</span>
-          </div>
-          <div class="calculator__result-row calculator__result-row--total">
-            <span class="calculator__result-label">Итого в месяц</span>
-            <span class="calculator__result-value text-red" id="calc-result-total">307 200 руб.</span>
-          </div>
-        </div>
-
-        <p class="calculator__note">Точную стоимость уточняйте у менеджера</p>
       </div>
     </div>
   </section>
@@ -277,38 +220,5 @@
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
   <script src="js/lightbox.js"></script>
-  <script>
-    (function() {
-      const areaSlider = document.getElementById('calc-area');
-      const formatSelect = document.getElementById('calc-format');
-      const areaValueLabel = document.getElementById('calc-area-value');
-      const resultArea = document.getElementById('calc-result-area');
-      const resultTariff = document.getElementById('calc-result-tariff');
-      const resultTotal = document.getElementById('calc-result-total');
-
-      const tariffs = {
-        MINI: 350,
-        MIDI: 320,
-        MAXI: 290
-      };
-
-      function calculate() {
-        const area = parseInt(areaSlider.value, 10);
-        const format = formatSelect.value;
-        const tariff = tariffs[format];
-        const total = area * tariff;
-
-        areaValueLabel.textContent = area.toLocaleString('ru-RU');
-        resultArea.textContent = area.toLocaleString('ru-RU') + ' м²';
-        resultTariff.textContent = tariff.toLocaleString('ru-RU') + ' руб/м²';
-        resultTotal.textContent = total.toLocaleString('ru-RU') + ' руб.';
-      }
-
-      areaSlider.addEventListener('input', calculate);
-      formatSelect.addEventListener('change', calculate);
-
-      calculate();
-    })();
-  </script>
 </body>
 </html>

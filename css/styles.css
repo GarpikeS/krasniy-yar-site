@@ -1276,6 +1276,37 @@ select.form-input {
   color: var(--gray-600);
 }
 
+a.schematic-card--link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+a.schematic-card--link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.schematic-card--featured {
+  border-color: var(--red);
+  border-width: 2px;
+}
+
+.schematic-card__badge {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 @media (max-width: 1024px) {
   .schematics {
     grid-template-columns: 1fr 1fr;
