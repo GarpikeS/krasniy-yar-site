@@ -84,7 +84,13 @@
             '<img src="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" ' +
               'alt="ИП Красный Яр" class="header__logo-img">' +
           '</a>' +
-          '<nav class="header__nav" id="nav">' + navHtml + '</nav>' +
+          '<nav class="header__nav" id="nav">' + navHtml +
+            '<div class="header__mobile-contacts">' +
+              '<a href="tel:+73919899949">' + phoneSvg + ' +7 (391) 989-99-49</a>' +
+              '<a href="mailto:red-yar@mail.ru">' + emailSvg + ' red-yar@mail.ru</a>' +
+              '<button class="btn btn--primary" onclick="openModal()">Обратный звонок</button>' +
+            '</div>' +
+          '</nav>' +
           '<div class="header__contacts">' +
             '<a href="mailto:red-yar@mail.ru" class="header__email">' + emailSvg + ' red-yar@mail.ru</a>' +
             '<a href="tel:+73919899949" class="header__phone">' + phoneSvg + ' +7 (391) 989-99-49</a>' +
