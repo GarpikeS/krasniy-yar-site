@@ -220,21 +220,24 @@ ul { list-style: none; }
 .header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 72px;
+  gap: 24px;
+}
+
+.header__logo {
+  flex-shrink: 0;
 }
 
 .header__logo-img {
-  height: 40px;
+  height: 36px;
   width: auto;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex: 1;
-  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
 }
 
 .header__link {
@@ -1232,7 +1235,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header__nav {
     position: fixed;
     top: 72px;
@@ -1247,18 +1250,21 @@ body {
     transform: translateY(-120%);
     transition: var(--transition);
     z-index: 999;
+    margin: 0;
   }
 
   .header__nav.active {
     transform: translateY(0);
   }
 
-  .header__phone {
-    display: none;
-  }
-
   .header__burger {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__contacts {
+    display: none;
   }
 
   .hero__inner {
@@ -3448,8 +3454,12 @@ a.footer__contact-item:hover {
    Responsive: new components
    ============================ */
 @media (max-width: 1200px) {
+  .header__inner {
+    gap: 16px;
+  }
+
   .header__nav {
-    gap: 14px;
+    gap: 10px;
   }
 
   .header__link {
@@ -3458,16 +3468,6 @@ a.footer__contact-item:hover {
 }
 
 @media (max-width: 1024px) {
-  .header__phone {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header__contacts {
-    display: none;
-  }
-
   .header__nav.active .header__mobile-contacts {
     display: flex;
     flex-direction: column;
@@ -3493,7 +3493,9 @@ a.footer__contact-item:hover {
     text-align: center;
     justify-content: center;
   }
+}
 
+@media (max-width: 768px) {
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -3585,15 +3587,6 @@ a.footer__contact-item:hover {
 
 .btn--primary.btn--lg:hover {
   animation: none;
-}
-
-/* Smooth underline hover for nav links */
-.header__link--active {
-  color: var(--red);
-}
-
-.header__link--active::after {
-  width: 100%;
 }
 
 /* Gradient text for hero accent on hover */
