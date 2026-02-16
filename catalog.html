@@ -14,12 +14,6 @@
 <body data-page="catalog">
   <div id="site-header"></div>
 
-  <div class="breadcrumbs"><div class="container">
-    <a href="index.html" class="breadcrumbs__link">Главная</a>
-    <span class="breadcrumbs__sep">/</span>
-    <span class="breadcrumbs__current">Каталог помещений</span>
-  </div></div>
-
   <!-- Page Hero -->
   <section class="section page-hero page-hero--small page-hero--image" style="background-image: url('assets/img/building-5.JPG');">
     <div class="container">
@@ -92,19 +86,103 @@
 
       </div>
 
-      <div class="catalog__photos fade-up" data-lightbox="catalog" data-delay="100">
-        <div class="catalog__photo">
-          <img src="assets/img/building-1.jpg" alt="Производственный корпус" loading="lazy">
-          <span>Производственные помещения</span>
+      <!-- Schematic layouts -->
+      <div class="section__header fade-up" style="margin-top:60px">
+        <h2 class="section__title">Планировки помещений</h2>
+        <p class="section__desc">Типовые схемы этажей с возможностью объединения секций</p>
+      </div>
+
+      <div class="schematics fade-up" data-delay="100">
+
+        <div class="schematic-card">
+          <div class="schematic-card__header">Производственное помещение</div>
+          <div class="schematic-card__plan">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="396" height="246" fill="#f8f8f8" stroke="#2a2a2a" stroke-width="2" rx="2"/>
+              <!-- Columns -->
+              <circle cx="70" cy="60" r="4" fill="#8a8a8a"/><circle cx="200" cy="60" r="4" fill="#8a8a8a"/>
+              <circle cx="330" cy="60" r="4" fill="#8a8a8a"/><circle cx="70" cy="130" r="4" fill="#8a8a8a"/>
+              <circle cx="200" cy="130" r="4" fill="#8a8a8a"/><circle cx="330" cy="130" r="4" fill="#8a8a8a"/>
+              <circle cx="70" cy="200" r="4" fill="#8a8a8a"/><circle cx="200" cy="200" r="4" fill="#8a8a8a"/>
+              <circle cx="330" cy="200" r="4" fill="#8a8a8a"/>
+              <!-- Main hall -->
+              <rect x="20" y="20" width="360" height="180" fill="none" stroke="#d41919" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+              <text x="200" y="115" text-anchor="middle" fill="#d41919" font-size="14" font-weight="600">Производственный зал</text>
+              <!-- Dims -->
+              <text x="200" y="215" text-anchor="middle" fill="#4a4a4a" font-size="11">60 × 30 м</text>
+              <!-- Gate -->
+              <rect x="160" y="198" width="80" height="6" fill="#d41919" rx="1"/>
+              <text x="200" y="242" text-anchor="middle" fill="#4a4a4a" font-size="10">Ворота 4×4 м</text>
+              <!-- Height -->
+              <text x="380" y="130" text-anchor="end" fill="#8a8a8a" font-size="10" transform="rotate(-90,380,130)">h = 8 м</text>
+            </svg>
+          </div>
+          <div class="schematic-card__specs">
+            <span>Шаг колонн 6×6 м</span>
+            <span>Высота 8 м</span>
+            <span>Нагрузка 3 т/м²</span>
+          </div>
         </div>
-        <div class="catalog__photo">
-          <img src="assets/img/building-4.jpg" alt="Офисный блок" loading="lazy">
-          <span>Офисные помещения</span>
+
+        <div class="schematic-card">
+          <div class="schematic-card__header">Складское помещение</div>
+          <div class="schematic-card__plan">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="396" height="246" fill="#f8f8f8" stroke="#2a2a2a" stroke-width="2" rx="2"/>
+              <!-- Rack rows -->
+              <rect x="30" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
+              <rect x="80" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
+              <rect x="150" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
+              <rect x="200" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
+              <rect x="270" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
+              <rect x="320" y="30" width="20" height="160" fill="#e0e0e0" stroke="#8a8a8a" rx="2"/>
+              <!-- Aisles label -->
+              <text x="55" y="115" text-anchor="middle" fill="#4a4a4a" font-size="9" transform="rotate(-90,55,115)">проезд</text>
+              <text x="125" y="115" text-anchor="middle" fill="#4a4a4a" font-size="9" transform="rotate(-90,125,115)">проезд</text>
+              <text x="245" y="115" text-anchor="middle" fill="#4a4a4a" font-size="9" transform="rotate(-90,245,115)">проезд</text>
+              <!-- Main zone -->
+              <rect x="20" y="20" width="360" height="180" fill="none" stroke="#d41919" stroke-width="1.5" stroke-dasharray="6,3" rx="2"/>
+              <text x="200" y="215" text-anchor="middle" fill="#4a4a4a" font-size="11">Зона хранения</text>
+              <!-- Gate -->
+              <rect x="160" y="198" width="80" height="6" fill="#d41919" rx="1"/>
+              <text x="200" y="242" text-anchor="middle" fill="#4a4a4a" font-size="10">Ворота 4×4 м</text>
+            </svg>
+          </div>
+          <div class="schematic-card__specs">
+            <span>Стеллажные зоны</span>
+            <span>Высота 8 м</span>
+            <span>Пожаротушение</span>
+          </div>
         </div>
-        <div class="catalog__photo">
-          <img src="assets/img/building-5.JPG" alt="Склад" loading="lazy">
-          <span>Складские помещения</span>
+
+        <div class="schematic-card">
+          <div class="schematic-card__header">Офисный блок</div>
+          <div class="schematic-card__plan">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="396" height="246" fill="#f8f8f8" stroke="#2a2a2a" stroke-width="2" rx="2"/>
+              <!-- Rooms -->
+              <rect x="20" y="20" width="170" height="90" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
+              <text x="105" y="70" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Кабинет 1</text>
+              <rect x="210" y="20" width="170" height="90" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
+              <text x="295" y="70" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Кабинет 2</text>
+              <rect x="20" y="130" width="110" height="90" fill="#f0f0ff" stroke="#4a4a8a" stroke-width="1" rx="2"/>
+              <text x="75" y="180" text-anchor="middle" fill="#4a4a8a" font-size="11" font-weight="500">Переговорная</text>
+              <rect x="150" y="130" width="80" height="90" fill="#f0fff0" stroke="#4a8a4a" stroke-width="1" rx="2"/>
+              <text x="190" y="175" text-anchor="middle" fill="#4a8a4a" font-size="10">Кухня</text>
+              <rect x="250" y="130" width="130" height="90" fill="#fff0f0" stroke="#d41919" stroke-width="1" rx="2"/>
+              <text x="315" y="180" text-anchor="middle" fill="#d41919" font-size="11" font-weight="500">Open space</text>
+              <!-- Corridor -->
+              <rect x="20" y="110" width="360" height="20" fill="#e8e8e8" rx="1"/>
+              <text x="200" y="124" text-anchor="middle" fill="#4a4a4a" font-size="9">Коридор</text>
+            </svg>
+          </div>
+          <div class="schematic-card__specs">
+            <span>2 этаж</span>
+            <span>Кондиционирование</span>
+            <span>Интернет</span>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -164,27 +242,32 @@
         <h2 class="section__title">Подобрать помещение</h2>
       </div>
 
-      <div class="contacts__form-wrap fade-up">
-        <form id="catalogForm" class="contacts__form">
-          <div class="form-group">
-            <input type="text" class="form-input" name="name" placeholder="Ваше имя" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" class="form-input" name="phone" placeholder="Телефон" required>
+      <div class="contacts__form-wrap fade-up" style="max-width:700px;margin:0 auto">
+        <form id="catalogForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" class="form-input" name="name" placeholder="Ваше имя *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-input" name="phone" placeholder="Телефон *" required>
+            </div>
           </div>
           <div class="form-group">
             <input type="email" class="form-input" name="email" placeholder="E-mail">
           </div>
           <div class="form-group">
-            <textarea class="form-textarea" name="message" placeholder="Сообщение" rows="4"></textarea>
+            <select class="form-input" name="format">
+              <option value="" disabled selected>Формат помещения</option>
+              <option value="MINI">MINI — от 480 м²</option>
+              <option value="MIDI">MIDI — от 960 м²</option>
+              <option value="MAXI">MAXI — от 1920 м²</option>
+            </select>
           </div>
-          <div class="form-privacy">
-            <label>
-              <input type="checkbox" required>
-              Согласен на обработку персональных данных
-            </label>
+          <div class="form-group">
+            <textarea class="form-input form-textarea" name="message" placeholder="Опишите ваши требования к помещению..." rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          <button type="submit" class="btn btn--primary btn--full">Подобрать помещение</button>
+          <p class="form-privacy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
         </form>
       </div>
     </div>
