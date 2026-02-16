@@ -27,86 +27,48 @@
   <!-- Infrastructure -->
   <section class="section">
     <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">Коммуникации и сервис</h2>
-      </div>
+      <div class="infra-tiles fade-up">
 
-      <div class="infra-list fade-up">
-        <div class="infra-row">
-          <div class="infra-row__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="infra-row__content">
-            <div class="infra-row__head">
-              <h3 class="infra-row__title">Электроснабжение</h3>
-              <span class="infra-row__value">до 5 МВт</span>
-            </div>
-            <p class="infra-row__desc">Собственная подстанция 110/10 кВ. Резервное питание. Возможность подключения энергоёмкого оборудования.</p>
-          </div>
+        <div class="infra-tile">
+          <svg class="infra-tile__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke-linejoin="round"/></svg>
+          <div class="infra-tile__value">5 МВт</div>
+          <div class="infra-tile__label">Электроснабжение</div>
+          <div class="infra-tile__sub">Подстанция 110/10 кВ, резерв</div>
         </div>
 
-        <div class="infra-row">
-          <div class="infra-row__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 22c3 0 6-2.7 6-6 0-4-3-6-4.5-8 0 3-3 4-4.5 3-1.5 1.5-3 3-3 5 0 3.3 2.7 6 6 6z"/></svg>
-          </div>
-          <div class="infra-row__content">
-            <div class="infra-row__head">
-              <h3 class="infra-row__title">Газоснабжение</h3>
-              <span class="infra-row__value">0.6 МПа</span>
-            </div>
-            <p class="infra-row__desc">Природный газ. Собственная газорегуляторная подстанция (ГРП).</p>
-          </div>
+        <div class="infra-tile">
+          <svg class="infra-tile__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c3 0 6-2.7 6-6 0-4-3-6-4.5-8 0 3-3 4-4.5 3-1.5 1.5-3 3-3 5 0 3.3 2.7 6 6 6z"/></svg>
+          <div class="infra-tile__value">0.6 МПа</div>
+          <div class="infra-tile__label">Газоснабжение</div>
+          <div class="infra-tile__sub">Природный газ, собственная ГРП</div>
         </div>
 
-        <div class="infra-row">
-          <div class="infra-row__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 2C12 2 5 10 5 14a7 7 0 0014 0c0-4-7-12-7-12z"/></svg>
-          </div>
-          <div class="infra-row__content">
-            <div class="infra-row__head">
-              <h3 class="infra-row__title">Водоснабжение</h3>
-              <span class="infra-row__value">200 м³/сутки</span>
-            </div>
-            <p class="infra-row__desc">Централизованное водоснабжение. Артезианская скважина.</p>
-          </div>
+        <div class="infra-tile">
+          <svg class="infra-tile__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2s-7 8-7 12a7 7 0 0014 0c0-4-7-12-7-12z"/></svg>
+          <div class="infra-tile__value">200 м³</div>
+          <div class="infra-tile__label">Водоснабжение</div>
+          <div class="infra-tile__sub">Централизованное + артскважина</div>
         </div>
 
-        <div class="infra-row">
-          <div class="infra-row__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M7 9c2 2 3 2.5 5 2.5s3-.5 5-2.5M7 14c2 2 3 2.5 5 2.5s3-.5 5-2.5" stroke-linecap="round"/></svg>
-          </div>
-          <div class="infra-row__content">
-            <div class="infra-row__head">
-              <h3 class="infra-row__title">Канализация</h3>
-            </div>
-            <p class="infra-row__desc">Хозяйственно-бытовая и ливневая канализация. Собственные очистные сооружения.</p>
-          </div>
+        <div class="infra-tile">
+          <svg class="infra-tile__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M7 9c2 2 3 2.5 5 2.5s3-.5 5-2.5M7 14c2 2 3 2.5 5 2.5s3-.5 5-2.5" stroke-linecap="round"/></svg>
+          <div class="infra-tile__label">Канализация</div>
+          <div class="infra-tile__sub">Бытовая, ливневая, очистные</div>
         </div>
 
-        <div class="infra-row">
-          <div class="infra-row__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><rect x="3" y="11" width="18" height="7" rx="2"/><circle cx="7.5" cy="20" r="1.5"/><circle cx="16.5" cy="20" r="1.5"/><path d="M8 11V8h8v3" stroke-linecap="round"/></svg>
-          </div>
-          <div class="infra-row__content">
-            <div class="infra-row__head">
-              <h3 class="infra-row__title">Транспортная доступность</h3>
-            </div>
-            <p class="infra-row__desc">Прямой подъезд с федеральной трассы Р-255 «Сибирь». Асфальтированные внутренние дороги. Ж/д ветка рядом.</p>
-          </div>
+        <div class="infra-tile">
+          <svg class="infra-tile__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          <div class="infra-tile__label">Транспорт</div>
+          <div class="infra-tile__sub">Р-255 «Сибирь», ж/д рядом</div>
         </div>
 
-        <div class="infra-row">
-          <div class="infra-row__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M5 12.5a7 7 0 0114 0" stroke-linecap="round"/><path d="M8.5 12.5a3.5 3.5 0 017 0" stroke-linecap="round"/><circle cx="12" cy="12.5" r="1"/><rect x="4" y="17" width="16" height="3" rx="1.5"/></svg>
-          </div>
-          <div class="infra-row__content">
-            <div class="infra-row__head">
-              <h3 class="infra-row__title">Связь и безопасность</h3>
-              <span class="infra-row__value">24/7</span>
-            </div>
-            <p class="infra-row__desc">Оптоволоконный интернет. Видеонаблюдение, пожарная сигнализация, круглосуточная охрана.</p>
-          </div>
+        <div class="infra-tile">
+          <svg class="infra-tile__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div class="infra-tile__value">24/7</div>
+          <div class="infra-tile__label">Охрана и связь</div>
+          <div class="infra-tile__sub">Видеонаблюдение, оптоволокно</div>
         </div>
+
       </div>
     </div>
   </section>

@@ -3886,82 +3886,60 @@ a.footer__contact-item:hover {
   align-items: start;
 }
 
-/* Timeline vertical with line */
-.timeline-v {
-  position: relative;
-  padding-left: 32px;
-}
-
-.timeline-v::before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--red), var(--gray-200));
-  border-radius: 1px;
-}
-
-.timeline-v__item {
-  position: relative;
-  padding-bottom: 24px;
-}
-
-.timeline-v__item:last-child {
-  padding-bottom: 0;
-}
-
-.timeline-v__marker {
-  position: absolute;
-  left: -32px;
-  top: 0;
-}
-
-.timeline-v__year {
+/* Timeline — bold years */
+.tl {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  background: var(--red);
-  border-radius: 50%;
-  position: relative;
+  flex-direction: column;
+  gap: 0;
 }
 
-.timeline-v__year::after {
-  content: attr(data-year);
-}
-
-.timeline-v__card {
-  background: var(--gray-50);
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
-  border-left: 3px solid var(--red);
+.tl__item {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--gray-100);
   transition: var(--transition);
 }
 
-.timeline-v__card:hover {
-  background: var(--white);
-  box-shadow: var(--shadow-sm);
+.tl__item:last-child {
+  border-bottom: none;
 }
 
-.timeline-v__title {
+.tl__item:hover {
+  padding-left: 8px;
+}
+
+.tl__year {
+  flex-shrink: 0;
   font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gray-200);
+  line-height: 1;
+  min-width: 72px;
+  transition: var(--transition);
+}
+
+.tl__item:hover .tl__year,
+.tl__item--accent .tl__year {
+  color: var(--red);
+}
+
+.tl__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.tl__title {
   font-weight: 700;
-  margin-bottom: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
 }
 
-.timeline-v__card p {
+.tl__text {
   font-size: 0.85rem;
-  color: var(--gray-600);
-  line-height: 1.5;
-  margin: 0;
-}
-
-.timeline-v__item .timeline-v__year {
-  box-shadow: 0 0 0 4px var(--white);
+  color: var(--gray-400);
 }
 
 .stats-compact {
@@ -4194,88 +4172,67 @@ a.footer__contact-item:hover {
 }
 
 /* ============================
-   Infrastructure page — row layout
+   Infrastructure page — tiles
    ============================ */
-.infra-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 800px;
+.infra-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.infra-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 24px 28px;
+.infra-tile {
   background: var(--white);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-align: center;
   transition: var(--transition);
 }
 
-.infra-row:hover {
+.infra-tile:hover {
   border-color: var(--red);
   box-shadow: var(--shadow-md);
-  transform: translateX(4px);
+  transform: translateY(-4px);
 }
 
-.infra-row__icon {
-  flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(212,25,25,0.06);
-  border-radius: var(--radius-md);
-}
-
-.infra-row__content {
-  flex: 1;
-  min-width: 0;
-}
-
-.infra-row__head {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  margin-bottom: 6px;
-}
-
-.infra-row__title {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.infra-row__value {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 800;
+.infra-tile__icon {
   color: var(--red);
-  white-space: nowrap;
+  margin-bottom: 12px;
 }
 
-.infra-row__desc {
-  font-size: 0.9rem;
-  color: var(--gray-600);
-  line-height: 1.5;
-  margin: 0;
+.infra-tile__value {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--red);
+  line-height: 1.1;
+  margin-bottom: 4px;
 }
 
-@media (max-width: 640px) {
-  .infra-row {
-    padding: 20px;
+.infra-tile__label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.infra-tile__sub {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .infra-tiles {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .infra-row__icon {
-    width: 44px;
-    height: 44px;
-  }
-  .infra-row__head {
-    flex-direction: column;
-    gap: 2px;
+}
+
+@media (max-width: 480px) {
+  .infra-tiles {
+    grid-template-columns: 1fr;
+    max-width: 320px;
   }
 }
 
