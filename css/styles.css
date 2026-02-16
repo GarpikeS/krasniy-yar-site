@@ -1307,9 +1307,34 @@ a.schematic-card--link:hover {
   letter-spacing: 0.05em;
 }
 
+/* Catalog two-column layout */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+}
+
+.catalog-layout__plans {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catalog-layout__form {
+  position: sticky;
+  top: 96px;
+}
+
 @media (max-width: 1024px) {
   .schematics {
     grid-template-columns: 1fr 1fr;
+  }
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+  .catalog-layout__form {
+    position: static;
   }
 }
 
