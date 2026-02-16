@@ -3880,3 +3880,312 @@ a.footer__contact-item:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================
+   Investor page — compact layout
+   ============================ */
+.investor-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+}
+
+.investor-layout__info {
+  min-width: 0;
+}
+
+.investor-layout__form {
+  position: sticky;
+  top: 96px;
+}
+
+/* Investor features (icon list) */
+.investor-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.investor-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--red);
+  transition: var(--transition);
+}
+
+.investor-feature:hover {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.investor-feature svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.investor-feature div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.investor-feature strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.investor-feature span {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+/* Support compact cards */
+.support-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.support-compact__card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  transition: var(--transition);
+}
+
+.support-compact__card:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-sm);
+}
+
+.support-compact__badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(212,25,25,0.08);
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.support-compact__badge--accent {
+  background: rgba(37,99,235,0.08);
+  color: #2563eb;
+}
+
+.support-compact__badge--region {
+  background: rgba(22,163,74,0.08);
+  color: #16a34a;
+}
+
+.support-compact__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.support-compact__amount {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+
+.support-compact__detail {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  line-height: 1.4;
+}
+
+/* Steps inline */
+.steps-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.step-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.step-inline__num {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-inline__arrow {
+  color: var(--gray-300);
+  display: flex;
+  align-items: center;
+}
+
+/* Investor responsive */
+@media (max-width: 1024px) {
+  .investor-layout {
+    grid-template-columns: 1fr;
+  }
+  .investor-layout__form {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .steps-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .step-inline__arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+}
+
+/* ============================
+   Infrastructure page — enhanced
+   ============================ */
+.infra-highlight {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.infra-highlight__item {
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+}
+
+.infra-highlight__value {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+
+.infra-highlight__label {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+/* Infra card enhanced — with value badge */
+.infra-card__value {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+
+/* ============================
+   Team section
+   ============================ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  background: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 3px solid var(--gray-200);
+  transition: var(--transition);
+}
+
+.team-card:hover .team-card__photo {
+  border-color: var(--red);
+}
+
+.team-card__photo svg {
+  color: var(--gray-300);
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.team-card__role {
+  font-size: 0.85rem;
+  color: var(--red);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.team-card__desc {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .infra-highlight {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .infra-highlight {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

@@ -24,215 +24,116 @@
     </div>
   </section>
 
-  <!-- Download Presentation -->
-  <section class="section section--gray" style="padding:40px 0">
-    <div class="container" style="text-align:center">
-      <a href="#" class="btn btn--primary btn--lg" onclick="alert('Файл презентации будет добавлен позже');return false;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Скачать презентацию парка
-      </a>
-    </div>
-  </section>
-
-  <!-- Investor Advantages -->
+  <!-- Main content: two columns -->
   <section class="section">
     <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">Почему «Красный Яр»</h2>
-      </div>
-      <div class="investor-advantages">
+      <div class="investor-layout">
 
-        <div class="investor-card fade-up">
-          <div class="investor-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12H15v-6H9v6H3z"/></svg>
+        <!-- Left: info -->
+        <div class="investor-layout__info">
+
+          <!-- Advantages compact -->
+          <h2 class="section__title" style="text-align:left;margin-bottom:20px">Почему «Красный Яр»</h2>
+          <div class="investor-features fade-up">
+            <div class="investor-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M3 21V9l9-6 9 6v12H15v-6H9v6H3z"/></svg>
+              <div>
+                <strong>Готовая инфраструктура</strong>
+                <span>Электричество, газ, вода, канализация</span>
+              </div>
+            </div>
+            <div class="investor-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+              <div>
+                <strong>Господдержка</strong>
+                <span>Федеральные и региональные программы</span>
+              </div>
+            </div>
+            <div class="investor-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <div>
+                <strong>Налоговые льготы</strong>
+                <span>На прибыль, имущество, земельный</span>
+              </div>
+            </div>
+            <div class="investor-feature">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
+              <div>
+                <strong>Управляющая компания</strong>
+                <span>Обслуживание территории и сервис</span>
+              </div>
+            </div>
           </div>
-          <h3 class="investor-card__title">Готовая инфраструктура</h3>
-          <p class="investor-card__text">Полный комплекс инженерных коммуникаций</p>
-        </div>
 
-        <div class="investor-card fade-up">
-          <div class="investor-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <!-- Support measures -->
+          <h2 class="section__title" style="text-align:left;margin-bottom:20px;margin-top:48px">Меры поддержки</h2>
+          <div class="support-compact fade-up">
+            <div class="support-compact__card">
+              <div class="support-compact__badge">Федеральная</div>
+              <h3 class="support-compact__title">Промышленная ипотека</h3>
+              <div class="support-compact__amount">до 500 млн ₽</div>
+              <p class="support-compact__detail">Срок до 7 лет, льготное финансирование</p>
+            </div>
+            <div class="support-compact__card">
+              <div class="support-compact__badge support-compact__badge--accent">МСП</div>
+              <h3 class="support-compact__title">Льготное кредитование</h3>
+              <div class="support-compact__amount">до 200 млн ₽</div>
+              <p class="support-compact__detail">Срок 3–10 лет, модернизация оборудования</p>
+            </div>
+            <div class="support-compact__card">
+              <div class="support-compact__badge support-compact__badge--region">Региональная</div>
+              <h3 class="support-compact__title">ФРП Красноярского края</h3>
+              <div class="support-compact__amount">5–200 млн ₽</div>
+              <p class="support-compact__detail">Ставка 4–6% годовых, целевое финансирование</p>
+            </div>
           </div>
-          <h3 class="investor-card__title">Налоговые льготы</h3>
-          <p class="investor-card__text">Сниженные ставки для арендаторов индустриальных парков</p>
-        </div>
 
-        <div class="investor-card fade-up">
-          <div class="investor-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          <!-- Steps inline -->
+          <h2 class="section__title" style="text-align:left;margin-bottom:20px;margin-top:48px">Как начать</h2>
+          <div class="steps-inline fade-up">
+            <div class="step-inline"><span class="step-inline__num">1</span>Заявка</div>
+            <div class="step-inline__arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="step-inline"><span class="step-inline__num">2</span>Консультация</div>
+            <div class="step-inline__arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="step-inline"><span class="step-inline__num">3</span>Документы</div>
+            <div class="step-inline__arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="step-inline"><span class="step-inline__num">4</span>Старт работы</div>
           </div>
-          <h3 class="investor-card__title">Господдержка</h3>
-          <p class="investor-card__text">Доступ к федеральным и региональным программам</p>
         </div>
 
-        <div class="investor-card fade-up">
-          <div class="investor-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-3.314 2.686-6 6-6s6 2.686 6 6"/></svg>
+        <!-- Right: form -->
+        <div class="investor-layout__form">
+          <h2 class="section__title" style="text-align:left;margin-bottom:20px">Оставить заявку</h2>
+          <div class="contacts__form-wrap">
+            <form id="investorForm">
+              <div class="form-group">
+                <input type="text" class="form-input" name="name" placeholder="Ваше имя *" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-input" name="phone" placeholder="Телефон *" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-input" name="company" placeholder="Название компании">
+              </div>
+              <div class="form-group">
+                <textarea class="form-input form-textarea" name="message" placeholder="Сообщение" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+              <p class="form-privacy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+            </form>
           </div>
-          <h3 class="investor-card__title">Управляющая компания</h3>
-          <p class="investor-card__text">Профессиональное обслуживание территории</p>
+          <a href="#" class="btn btn--outline btn--full" style="margin-top:16px" onclick="alert('Файл презентации будет добавлен позже');return false;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Скачать презентацию
+          </a>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Steps Timeline -->
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">Как начать работу</h2>
-      </div>
-
-      <div class="steps-timeline">
-
-        <div class="step fade-up">
-          <div class="step__number">1</div>
-          <h3 class="step__title">Заявка</h3>
-          <p class="step__text">Оставьте заявку на сайте или позвоните нам</p>
-        </div>
-
-        <div class="step fade-up">
-          <div class="step__number">2</div>
-          <h3 class="step__title">Консультация</h3>
-          <p class="step__text">Обсудим ваши потребности и подберём помещение</p>
-        </div>
-
-        <div class="step fade-up">
-          <div class="step__number">3</div>
-          <h3 class="step__title">Документы</h3>
-          <p class="step__text">Подготовим договор и необходимые документы</p>
-        </div>
-
-        <div class="step fade-up">
-          <div class="step__number">4</div>
-          <h3 class="step__title">Старт работы</h3>
-          <p class="step__text">Получите ключи и приступайте к работе</p>
-        </div>
-
-        <div class="step fade-up">
-          <div class="step__number">5</div>
-          <h3 class="step__title">Поддержка</h3>
-          <p class="step__text">Помогаем с подключением к мерам господдержки</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Support Measures -->
-  <section class="section section--dark">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title section__title--light">Меры поддержки</h2>
-      </div>
-
-      <div class="support__grid">
-
-        <div class="support-card fade-up">
-          <div class="support-card__badge">Федеральная</div>
-          <h3 class="support-card__title">Промышленная ипотека</h3>
-          <div class="support-card__amount">до 500 млн ₽</div>
-          <ul class="support-card__list">
-            <li>Льготное финансирование</li>
-            <li>Приобретение промышленной недвижимости</li>
-            <li>Срок: до 7 лет</li>
-          </ul>
-        </div>
-
-        <div class="support-card fade-up">
-          <div class="support-card__badge support-card__badge--accent">МСП</div>
-          <h3 class="support-card__title">Льготное кредитование</h3>
-          <div class="support-card__amount">до 200 млн ₽</div>
-          <ul class="support-card__list">
-            <li>Развитие производственных мощностей</li>
-            <li>Модернизация оборудования</li>
-            <li>Срок: 3–10 лет</li>
-          </ul>
-        </div>
-
-        <div class="support-card fade-up">
-          <div class="support-card__badge support-card__badge--region">Региональная</div>
-          <h3 class="support-card__title">Региональная промышленная ипотека</h3>
-          <div class="support-card__amount">5–200 млн ₽</div>
-          <ul class="support-card__list">
-            <li>ФРП Красноярского края</li>
-            <li>Целевое финансирование</li>
-            <li>Ставка: 4–6% годовых</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Tax Benefits -->
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">Налоговые льготы</h2>
-      </div>
-
-      <div class="tax-benefits">
-
-        <div class="tax-benefits__card fade-up">
-          <div class="tax-benefits__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 20V10M12 20V4M18 20V14"/></svg>
-          </div>
-          <h3 class="tax-benefits__title">Налог на прибыль</h3>
-          <p class="tax-benefits__text">Сниженная ставка для арендаторов индустриальных парков</p>
-        </div>
-
-        <div class="tax-benefits__card fade-up">
-          <div class="tax-benefits__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="10" width="8" height="8" rx="1"/><path d="M10 10V8a2 2 0 014 0v2"/><circle cx="12" cy="14" r="1" fill="currentColor"/></svg>
-          </div>
-          <h3 class="tax-benefits__title">Налог на имущество</h3>
-          <p class="tax-benefits__text">Льготные условия для арендаторов парка</p>
-        </div>
-
-        <div class="tax-benefits__card fade-up">
-          <div class="tax-benefits__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L20 7V17L12 22L4 17V7L12 2Z"/><path d="M12 10V16M9 13H15"/></svg>
-          </div>
-          <h3 class="tax-benefits__title">Земельный налог</h3>
-          <p class="tax-benefits__text">Преференциальные ставки для арендаторов</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Form -->
-  <section class="section">
-    <div class="container">
-      <div class="section__header fade-up">
-        <h2 class="section__title">Оставить заявку</h2>
-      </div>
-
-      <div class="contacts__form-wrap fade-up" style="max-width:700px;margin:0 auto">
-        <form id="investorForm">
-          <div class="form-group">
-            <input type="text" class="form-input" name="name" placeholder="Ваше имя" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" class="form-input" name="phone" placeholder="Телефон" required>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-input" name="company" placeholder="Название компании">
-          </div>
-          <div class="form-group">
-            <textarea class="form-input form-textarea" name="message" placeholder="Сообщение" rows="4"></textarea>
-          </div>
-          <div class="form-privacy">
-            <label>
-              <input type="checkbox" required>
-              Согласен на обработку персональных данных
-            </label>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
-        </form>
       </div>
     </div>
   </section>
