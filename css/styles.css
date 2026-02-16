@@ -281,6 +281,10 @@ ul { list-style: none; }
   color: var(--red);
 }
 
+.header__mobile-contacts {
+  display: none;
+}
+
 .header__burger {
   display: none;
   flex-direction: column;
@@ -3474,10 +3478,6 @@ a.footer__contact-item:hover {
     gap: 12px;
     padding-top: 16px;
     border-top: 1px solid var(--gray-100);
-  }
-
-  .header__mobile-contacts {
-    display: none;
   }
 
   .header__mobile-contacts a {
