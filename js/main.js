@@ -227,6 +227,20 @@ if (filterBtns.length > 0 && residentCards.length > 0) {
 }
 
 // ============================
+// Resident logo fallback
+// ============================
+document.querySelectorAll('.resident-card__logo img').forEach(img => {
+  img.addEventListener('error', () => {
+    const alt = img.getAttribute('alt') || '?';
+    const initial = alt.charAt(0).toUpperCase();
+    const span = document.createElement('span');
+    span.className = 'resident-card__initial';
+    span.textContent = initial;
+    img.parentElement.replaceChild(span, img);
+  });
+});
+
+// ============================
 // Toast notification
 // ============================
 function showToast(message) {
