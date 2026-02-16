@@ -3882,6 +3882,106 @@ a.footer__contact-item:hover {
 }
 
 /* ============================
+   About page — history + stats side-by-side
+   ============================ */
+.about-top {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+
+.timeline-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-compact__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.timeline-compact__item:last-child {
+  border-bottom: none;
+}
+
+.timeline-compact__year {
+  flex-shrink: 0;
+  width: 52px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.timeline-compact__item div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.timeline-compact__item strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.timeline-compact__item span {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.stats-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stats-compact__item {
+  padding: 20px 24px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--red);
+}
+
+.stats-compact__value {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--red);
+  margin-bottom: 2px;
+}
+
+.stats-compact__label {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+@media (max-width: 1024px) {
+  .about-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .stats-compact__item {
+    padding: 16px 20px;
+  }
+  .stats-compact__value {
+    font-size: 1.3rem;
+  }
+}
+
+/* ============================
    Investor page — compact layout
    ============================ */
 .investor-layout {
