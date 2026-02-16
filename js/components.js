@@ -92,12 +92,7 @@
             '</div>' +
           '</nav>' +
           '<div class="header__contacts">' +
-            '<a href="mailto:red-yar@mail.ru" class="header__email">' + emailSvg + ' red-yar@mail.ru</a>' +
             '<a href="tel:+73919899949" class="header__phone">' + phoneSvg + ' +7 (391) 989-99-49</a>' +
-            '<div class="header__socials">' +
-              '<a href="https://t.me/krasniyyar" target="_blank" rel="noopener" class="header__social" aria-label="Telegram">' + telegramSvg + '</a>' +
-              '<a href="https://vk.com/krasniyyar" target="_blank" rel="noopener" class="header__social" aria-label="VK">' + vkSvg + '</a>' +
-            '</div>' +
             '<button class="btn btn--primary btn--sm" id="callbackBtn">Обратный звонок</button>' +
           '</div>' +
           '<button class="header__burger" id="burger" aria-label="Меню">' +
