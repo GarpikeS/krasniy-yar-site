@@ -3,9 +3,11 @@
 // ============================
 const header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('header--scrolled', window.scrollY > 50);
-});
+if (header) {
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('header--scrolled', window.scrollY > 50);
+  });
+}
 
 // ============================
 // Mobile burger menu
@@ -13,18 +15,20 @@ window.addEventListener('scroll', () => {
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  nav.classList.toggle('active');
-});
-
-// Close mobile menu on link click
-nav.querySelectorAll('.header__link').forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('active');
-    nav.classList.remove('active');
+if (burger && nav) {
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    nav.classList.toggle('active');
   });
-});
+
+  // Close mobile menu on link click
+  nav.querySelectorAll('.header__link').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('active');
+      nav.classList.remove('active');
+    });
+  });
+}
 
 // ============================
 // Intersection Observer for fade-up animations
@@ -93,8 +97,7 @@ document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(
 // ============================
 // Phone input mask
 // ============================
-const phoneInput = document.querySelector('input[type="tel"]');
-if (phoneInput) {
+document.querySelectorAll('input[type="tel"]').forEach(phoneInput => {
   phoneInput.addEventListener('input', (e) => {
     let value = e.target.value.replace(/\D/g, '');
 
@@ -114,28 +117,23 @@ if (phoneInput) {
 
     e.target.value = formatted;
   });
-}
+});
 
 // ============================
 // Form submit
 // ============================
-const form = document.getElementById('contactForm');
-if (form) {
+document.querySelectorAll('form').forEach(form => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
     const btn = form.querySelector('button[type="submit"]');
+    if (!btn) return;
     const originalText = btn.textContent;
-
     btn.textContent = 'Отправка...';
     btn.disabled = true;
-
-    // Simulate submission
     setTimeout(() => {
       btn.textContent = 'Заявка отправлена!';
       btn.style.background = '#22c55e';
       btn.style.borderColor = '#22c55e';
-
       setTimeout(() => {
         form.reset();
         btn.textContent = originalText;
@@ -145,23 +143,45 @@ if (form) {
       }, 3000);
     }, 1000);
   });
-}
+});
 
 // ============================
 // Smooth scroll for anchor links
 // ============================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
+    const href = anchor.getAttribute('href');
+    if (href === '#' || href.length < 2) return;
     e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
+    const target = document.querySelector(href);
     if (target) {
-      const headerHeight = header.offsetHeight;
+      const headerEl = document.querySelector('.header');
+      const headerHeight = headerEl ? headerEl.offsetHeight : 0;
       const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     }
   });
 });
+
+// ============================
+// Residents filter
+// ============================
+const filterBtns = document.querySelectorAll('.filter-bar__btn');
+const residentCards = document.querySelectorAll('.resident-card[data-category]');
+
+if (filterBtns.length > 0 && residentCards.length > 0) {
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('filter-bar__btn--active'));
+      btn.classList.add('filter-bar__btn--active');
+      const filter = btn.dataset.filter;
+      residentCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}

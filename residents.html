@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резиденты — ИП «Красный Яр»</title>
+  <meta name="description" content="Резиденты индустриального парка Красный Яр — 9 промышленных компаний">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="residents">
+  <div id="site-header"></div>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <a href="index.html" class="breadcrumbs__link">Главная</a>
+      <span class="breadcrumbs__sep">/</span>
+      <span class="breadcrumbs__current">Резиденты</span>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__content fade-up">
+        <span class="section__tag">Резиденты</span>
+        <h1 class="page-hero__title">Наши резиденты</h1>
+        <p class="page-hero__subtitle">Компании, которые уже выбрали «Красный Яр»</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Bar -->
+  <section class="residents-stats section--gray">
+    <div class="container">
+      <div class="residents-stats__row fade-up">
+        <div class="residents-stats__item">
+          <span class="residents-stats__value text-red">9</span>
+          <span class="residents-stats__label">резидентов</span>
+        </div>
+        <div class="residents-stats__divider"></div>
+        <div class="residents-stats__item">
+          <span class="residents-stats__value text-red">44 873</span>
+          <span class="residents-stats__unit">м²</span>
+          <span class="residents-stats__label">общая площадь</span>
+        </div>
+        <div class="residents-stats__divider"></div>
+        <div class="residents-stats__item">
+          <span class="residents-stats__value text-red">12</span>
+          <span class="residents-stats__unit">лет</span>
+          <span class="residents-stats__label">средний стаж работы</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar fade-up">
+        <button class="filter-bar__btn filter-bar__btn--active" data-filter="all">Все</button>
+        <button class="filter-bar__btn" data-filter="metal">Металлообработка</button>
+        <button class="filter-bar__btn" data-filter="trade">Металлопрокат</button>
+        <button class="filter-bar__btn" data-filter="equipment">Оборудование</button>
+        <button class="filter-bar__btn" data-filter="print">Полиграфия</button>
+        <button class="filter-bar__btn" data-filter="other">Прочее</button>
+      </div>
+
+      <!-- Residents Grid -->
+      <div class="residents-catalog">
+
+        <!-- 1. Спецтехномаш -->
+        <a href="residents/1.html" class="resident-card fade-up" data-category="equipment">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6438-3739-4764-b739-333635656465/-/empty/_.png" alt="Спецтехномаш" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">АО «Спецтехномаш»</h3>
+          <p class="resident-card__industry">Горно-обогатительное оборудование</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              8 900 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2013
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 2. УралСибТрейд-Красноярск -->
+        <a href="residents/2.html" class="resident-card fade-up" data-category="trade" data-delay="50">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild3662-6537-4338-a162-663733323338/-/empty/kras.png" alt="УралСибТрейд" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «УралСибТрейд-Красноярск»</h3>
+          <p class="resident-card__industry">Металлопрокат, метизы</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              11 978 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2017
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 3. Завод металлоконструкций -->
+        <a href="residents/3.html" class="resident-card fade-up" data-category="metal" data-delay="100">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6332-6635-4566-b536-323962373665/-/empty/logo.png" alt="Завод МК" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «Завод металлоконструкций»</h3>
+          <p class="resident-card__industry">Металлоконструкции</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              5 870 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2017
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 4. 4UPRINT (Палитра) -->
+        <a href="residents/4.html" class="resident-card fade-up" data-category="print" data-delay="150">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6338-6132-4662-b563-303761616631/-/empty/logo-1.png" alt="4UPRINT" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">4UPRINT (ООО «Палитра»)</h3>
+          <p class="resident-card__industry">Полиграфия</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              514 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2017
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 5. Континенталь -->
+        <a href="residents/5.html" class="resident-card fade-up" data-category="trade" data-delay="200">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6433-3532-4361-a266-346463326534/-/empty/_-1.png" alt="Континенталь" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «Континенталь»</h3>
+          <p class="resident-card__industry">Нержавеющий металлопрокат</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              1 170 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2018
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 6. ОТК -->
+        <a href="residents/6.html" class="resident-card fade-up" data-category="metal" data-delay="250">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6561-3261-4237-b435-643735363165/-/empty/__.png" alt="ОТК" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «ОТК»</h3>
+          <p class="resident-card__industry">Металлообработка</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              1 008 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2022
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 7. Грузовая механика -->
+        <a href="residents/7.html" class="resident-card fade-up" data-category="equipment">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6436-6365-4634-b664-326364326436/-/empty/photo.png" alt="Грузовая механика" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «Грузовая механика»</h3>
+          <p class="resident-card__industry">Грузоподъёмное оборудование</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              11 713 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2023
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 8. ИлАр -->
+        <a href="residents/8.html" class="resident-card fade-up" data-category="metal" data-delay="50">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild6362-6533-4136-b863-623234396437/-/empty/-.png" alt="ИлАр" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «ИлАр»</h3>
+          <p class="resident-card__industry">Металлоконструкции</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              1 761 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2025
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- 9. ТР Резерв -->
+        <a href="residents/9.html" class="resident-card fade-up" data-category="other" data-delay="100">
+          <div class="resident-card__logo">
+            <img src="https://thb.tildacdn.com/tild3564-3032-4062-b933-663363313864/-/empty/photo.png" alt="ТР Резерв" loading="lazy">
+          </div>
+          <h3 class="resident-card__name">ООО «ТР Резерв»</h3>
+          <p class="resident-card__industry">Резервуары</p>
+          <div class="resident-card__meta">
+            <span class="resident-card__area">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              1 959 м²
+            </span>
+            <span class="resident-card__year">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              2025
+            </span>
+          </div>
+          <span class="resident-card__arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+      </div><!-- /.residents-catalog -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="cta-block fade-up">
+        <h2 class="cta-block__title">Хотите стать резидентом?</h2>
+        <p class="cta-block__text">Узнайте о доступных площадях, условиях размещения и преимуществах резидентства в промышленном парке «Красный Яр»</p>
+        <a href="investor.html" class="btn btn--primary">Условия для инвесторов</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

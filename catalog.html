@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог помещений — ИП «Красный Яр»</title>
+  <meta name="description" content="Каталог помещений индустриального парка «Красный Яр». Гибкие форматы площадей от 480 до 1920+ м² для любого производства.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="catalog">
+  <div id="site-header"></div>
+
+  <div class="breadcrumbs"><div class="container">
+    <a href="index.html" class="breadcrumbs__link">Главная</a>
+    <span class="breadcrumbs__sep">/</span>
+    <span class="breadcrumbs__current">Каталог помещений</span>
+  </div></div>
+
+  <!-- Page Hero -->
+  <section class="section page-hero page-hero--small">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">Помещения</span>
+        <h1 class="section__title">Каталог помещений</h1>
+        <p class="page-hero__subtitle">Гибкие форматы площадей для любого производства</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Format Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="formats-grid">
+
+        <div class="format-card fade-up">
+          <div class="format-card__header">
+            <div class="format-card__label">MINI</div>
+            <div class="format-card__area">от 480 м²</div>
+          </div>
+          <div class="format-card__body">
+            <ul class="format-card__specs">
+              <li>Шаг колонн 6×6 м</li>
+              <li>Высота 8 м</li>
+              <li>Нагрузка 3 т/м²</li>
+              <li>Пожаротушение</li>
+            </ul>
+            <p class="format-card__desc">Подходит для небольших производств и складов</p>
+            <a href="#calculator" class="btn btn--outline">Рассчитать стоимость</a>
+          </div>
+        </div>
+
+        <div class="format-card format-card--featured fade-up">
+          <div class="format-card__header">
+            <div class="format-card__label">MIDI <span class="format-card__badge">Популярный</span></div>
+            <div class="format-card__area">от 960 м²</div>
+          </div>
+          <div class="format-card__body">
+            <ul class="format-card__specs">
+              <li>Шаг колонн 6×6 м</li>
+              <li>Высота 8 м</li>
+              <li>Нагрузка 3 т/м²</li>
+              <li>Пожаротушение</li>
+              <li>Офисный блок</li>
+            </ul>
+            <p class="format-card__desc">Подходит для среднего производства</p>
+            <a href="#calculator" class="btn btn--primary">Рассчитать стоимость</a>
+          </div>
+        </div>
+
+        <div class="format-card fade-up">
+          <div class="format-card__header">
+            <div class="format-card__label">MAXI</div>
+            <div class="format-card__area">от 1920 м²</div>
+          </div>
+          <div class="format-card__body">
+            <ul class="format-card__specs">
+              <li>Шаг колонн 6×6 м</li>
+              <li>Высота 8 м</li>
+              <li>Нагрузка 3 т/м²</li>
+              <li>Пожаротушение</li>
+              <li>Офисный блок</li>
+              <li>Энергообеспечение 5 МВт</li>
+            </ul>
+            <p class="format-card__desc">Для крупных предприятий</p>
+            <a href="#calculator" class="btn btn--outline">Рассчитать стоимость</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rent Calculator -->
+  <section class="section section--gray calculator" id="calculator">
+    <div class="container">
+      <div class="section__header fade-up">
+        <h2 class="section__title">Калькулятор аренды</h2>
+      </div>
+
+      <div class="calculator__body fade-up">
+        <div class="calculator__controls">
+          <div class="form-group">
+            <label class="form-group__label" for="calc-area">Площадь: <span id="calc-area-value">960</span> м²</label>
+            <input type="range" id="calc-area" class="calculator__range" min="100" max="5000" step="50" value="960">
+            <div class="calculator__range-labels">
+              <span>100 м²</span>
+              <span>5000 м²</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-group__label" for="calc-format">Формат помещения</label>
+            <select id="calc-format" class="form-input">
+              <option value="MINI">MINI — 350 руб/м²</option>
+              <option value="MIDI" selected>MIDI — 320 руб/м²</option>
+              <option value="MAXI">MAXI — 290 руб/м²</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calculator__result" id="calc-result">
+          <div class="calculator__result-row">
+            <span class="calculator__result-label">Площадь</span>
+            <span class="calculator__result-value" id="calc-result-area">960 м²</span>
+          </div>
+          <div class="calculator__result-row">
+            <span class="calculator__result-label">Тариф</span>
+            <span class="calculator__result-value" id="calc-result-tariff">320 руб/м²</span>
+          </div>
+          <div class="calculator__result-row calculator__result-row--total">
+            <span class="calculator__result-label">Итого в месяц</span>
+            <span class="calculator__result-value text-red" id="calc-result-total">307 200 руб.</span>
+          </div>
+        </div>
+
+        <p class="calculator__note">Точную стоимость уточняйте у менеджера</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Form -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header fade-up">
+        <h2 class="section__title">Подобрать помещение</h2>
+      </div>
+
+      <div class="contacts__form-wrap fade-up">
+        <form id="catalogForm" class="contacts__form">
+          <div class="form-group">
+            <input type="text" class="form-input" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-input" name="phone" placeholder="Телефон" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" name="email" placeholder="E-mail">
+          </div>
+          <div class="form-group">
+            <textarea class="form-textarea" name="message" placeholder="Сообщение" rows="4"></textarea>
+          </div>
+          <div class="form-privacy">
+            <label>
+              <input type="checkbox" required>
+              Согласен на обработку персональных данных
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      const areaSlider = document.getElementById('calc-area');
+      const formatSelect = document.getElementById('calc-format');
+      const areaValueLabel = document.getElementById('calc-area-value');
+      const resultArea = document.getElementById('calc-result-area');
+      const resultTariff = document.getElementById('calc-result-tariff');
+      const resultTotal = document.getElementById('calc-result-total');
+
+      const tariffs = {
+        MINI: 350,
+        MIDI: 320,
+        MAXI: 290
+      };
+
+      function calculate() {
+        const area = parseInt(areaSlider.value, 10);
+        const format = formatSelect.value;
+        const tariff = tariffs[format];
+        const total = area * tariff;
+
+        areaValueLabel.textContent = area.toLocaleString('ru-RU');
+        resultArea.textContent = area.toLocaleString('ru-RU') + ' м²';
+        resultTariff.textContent = tariff.toLocaleString('ru-RU') + ' руб/м²';
+        resultTotal.textContent = total.toLocaleString('ru-RU') + ' руб.';
+      }
+
+      areaSlider.addEventListener('input', calculate);
+      formatSelect.addEventListener('change', calculate);
+
+      calculate();
+    })();
+  </script>
+</body>
+</html>

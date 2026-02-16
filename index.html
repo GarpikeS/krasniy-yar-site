@@ -10,32 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#" class="header__logo">
-        <img src="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" alt="ИП Красный Яр" class="header__logo-img">
-      </a>
-      <nav class="header__nav" id="nav">
-        <a href="#about" class="header__link">О парке</a>
-        <a href="#advantages" class="header__link">Преимущества</a>
-        <a href="#formats" class="header__link">Помещения</a>
-        <a href="#residents" class="header__link">Резиденты</a>
-        <a href="#support" class="header__link">Поддержка</a>
-        <a href="#contacts" class="header__link">Контакты</a>
-      </nav>
-      <a href="tel:+73919899949" class="header__phone">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        +7 (391) 989-99-49
-      </a>
-      <button class="header__burger" id="burger" aria-label="Меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+<body data-page="index">
+  <div id="site-header"></div>
 
   <!-- Hero -->
   <section class="hero" id="hero">
@@ -50,8 +26,8 @@
         с полной инженерной инфраструктурой
       </p>
       <div class="hero__actions fade-up" data-delay="300">
-        <a href="#formats" class="btn btn--primary">Формат помещений</a>
-        <a href="#support" class="btn btn--outline">Меры поддержки</a>
+        <a href="catalog.html" class="btn btn--primary">Формат помещений</a>
+        <a href="investor.html" class="btn btn--outline">Меры поддержки</a>
       </div>
       <div class="hero__stats fade-up" data-delay="400">
         <div class="hero__stat">
@@ -220,7 +196,7 @@
               </li>
             </ul>
           </div>
-          <a href="#contacts" class="btn btn--primary btn--full">Узнать стоимость</a>
+          <a href="catalog.html#calculator" class="btn btn--primary btn--full">Узнать стоимость</a>
         </div>
         <div class="format-card format-card--featured fade-up" data-delay="100">
           <div class="format-card__badge">Популярный</div>
@@ -252,7 +228,7 @@
               </li>
             </ul>
           </div>
-          <a href="#contacts" class="btn btn--primary btn--full">Узнать стоимость</a>
+          <a href="catalog.html#calculator" class="btn btn--primary btn--full">Узнать стоимость</a>
         </div>
         <div class="format-card fade-up" data-delay="200">
           <div class="format-card__header">
@@ -287,7 +263,7 @@
               </li>
             </ul>
           </div>
-          <a href="#contacts" class="btn btn--primary btn--full">Узнать стоимость</a>
+          <a href="catalog.html#calculator" class="btn btn--primary btn--full">Узнать стоимость</a>
         </div>
       </div>
     </div>
@@ -301,16 +277,73 @@
         <h2 class="section__title">Нам <span class="text-red">доверяют</span></h2>
         <p class="section__desc">Компании, которые уже выбрали «Красный Яр» для развития бизнеса</p>
       </div>
-      <div class="residents__grid fade-up" data-delay="100">
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6438-3739-4764-b739-333635656465/-/empty/_.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild3662-6537-4338-a162-663733323338/-/empty/kras.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6332-6635-4566-b536-323962373665/-/empty/logo.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6338-6132-4662-b563-303761616631/-/empty/logo-1.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6433-3532-4361-a266-346463326534/-/empty/_-1.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6561-3261-4237-b435-643735363165/-/empty/__.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6436-6365-4634-b664-326364326436/-/empty/photo.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild6362-6533-4136-b863-623234396437/-/empty/-.png" alt="Резидент" loading="lazy"></div>
-        <div class="resident-logo"><img src="https://thb.tildacdn.com/tild3564-3032-4062-b933-663363313864/-/empty/photo.png" alt="Резидент" loading="lazy"></div>
+      <div class="residents-catalog fade-up" data-delay="100">
+        <a href="residents/1.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6438-3739-4764-b739-333635656465/-/empty/_.png" alt="Спецтехномаш" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">АО «Спецтехномаш»</div>
+            <div class="resident-card__industry">Горно-обогатительное оборудование</div>
+          </div>
+        </a>
+        <a href="residents/2.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild3662-6537-4338-a162-663733323338/-/empty/kras.png" alt="УралСибТрейд" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «УралСибТрейд-Красноярск»</div>
+            <div class="resident-card__industry">Металлопрокат, метизы</div>
+          </div>
+        </a>
+        <a href="residents/3.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6332-6635-4566-b536-323962373665/-/empty/logo.png" alt="Завод МК" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «Завод металлоконструкций»</div>
+            <div class="resident-card__industry">Металлоконструкции</div>
+          </div>
+        </a>
+        <a href="residents/4.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6338-6132-4662-b563-303761616631/-/empty/logo-1.png" alt="4UPRINT" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">4UPRINT (ООО «Палитра»)</div>
+            <div class="resident-card__industry">Полиграфия</div>
+          </div>
+        </a>
+        <a href="residents/5.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6433-3532-4361-a266-346463326534/-/empty/_-1.png" alt="Континенталь" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «Континенталь»</div>
+            <div class="resident-card__industry">Нержавеющий металлопрокат</div>
+          </div>
+        </a>
+        <a href="residents/6.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6561-3261-4237-b435-643735363165/-/empty/__.png" alt="ОТК" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «ОТК»</div>
+            <div class="resident-card__industry">Металлообработка</div>
+          </div>
+        </a>
+        <a href="residents/7.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6436-6365-4634-b664-326364326436/-/empty/photo.png" alt="Грузовая механика" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «Грузовая механика»</div>
+            <div class="resident-card__industry">Грузоподъёмное оборудование</div>
+          </div>
+        </a>
+        <a href="residents/8.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild6362-6533-4136-b863-623234396437/-/empty/-.png" alt="ИлАр" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «ИлАр»</div>
+            <div class="resident-card__industry">Металлоконструкции</div>
+          </div>
+        </a>
+        <a href="residents/9.html" class="resident-card">
+          <div class="resident-card__logo"><img src="https://thb.tildacdn.com/tild3564-3032-4062-b933-663363313864/-/empty/photo.png" alt="ТР Резерв" loading="lazy"></div>
+          <div class="resident-card__info">
+            <div class="resident-card__name">ООО «ТР Резерв»</div>
+            <div class="resident-card__industry">Резервуары</div>
+          </div>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:40px" class="fade-up" data-delay="200">
+        <a href="residents.html" class="btn btn--primary">Все резиденты</a>
       </div>
     </div>
   </section>
@@ -362,7 +395,7 @@
             <li>Не менее 50% на производство</li>
             <li>Льготная процентная ставка</li>
           </ul>
-          <a href="#contacts" class="btn btn--primary btn--full">Подробнее</a>
+          <a href="investor.html" class="btn btn--primary btn--full">Подробнее</a>
         </div>
         <div class="support-card fade-up" data-delay="100">
           <div class="support-card__badge support-card__badge--accent">МСП</div>
@@ -373,7 +406,7 @@
             <li>Для микро и малых предприятий</li>
             <li>Сниженные процентные ставки</li>
           </ul>
-          <a href="#contacts" class="btn btn--primary btn--full">Подробнее</a>
+          <a href="investor.html" class="btn btn--primary btn--full">Подробнее</a>
         </div>
         <div class="support-card fade-up" data-delay="200">
           <div class="support-card__badge support-card__badge--region">Региональная</div>
@@ -384,8 +417,38 @@
             <li>ФРП Красноярского края</li>
             <li>Целевое финансирование</li>
           </ul>
-          <a href="#contacts" class="btn btn--primary btn--full">Подробнее</a>
+          <a href="investor.html" class="btn btn--primary btn--full">Подробнее</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Become Resident -->
+  <section class="section become-resident" id="become">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">Резидентам</span>
+        <h2 class="section__title">Как стать<br><span class="text-red">резидентом</span></h2>
+      </div>
+      <div class="become-steps fade-up" data-delay="100">
+        <div class="become-step">
+          <div class="become-step__number">1</div>
+          <div class="become-step__title">Оставьте заявку</div>
+          <div class="become-step__text">Свяжитесь с нами по телефону или через форму на сайте</div>
+        </div>
+        <div class="become-step">
+          <div class="become-step__number">2</div>
+          <div class="become-step__title">Подберём помещение</div>
+          <div class="become-step__text">Обсудим ваши потребности и предложим оптимальный вариант</div>
+        </div>
+        <div class="become-step">
+          <div class="become-step__number">3</div>
+          <div class="become-step__title">Начните работу</div>
+          <div class="become-step__text">Оформите документы и получите доступ к мерам поддержки</div>
+        </div>
+      </div>
+      <div class="fade-up" data-delay="200" style="text-align:center">
+        <a href="investor.html" class="btn btn--primary btn--lg">Подробнее для инвесторов</a>
       </div>
     </div>
   </section>
@@ -431,24 +494,9 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__logo">
-        <img src="https://static.tildacdn.com/tild3465-3836-4965-b332-633632636566/__.png" alt="ИП Красный Яр">
-      </div>
-      <div class="footer__links">
-        <a href="#about">О парке</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="#formats">Помещения</a>
-        <a href="#contacts">Контакты</a>
-      </div>
-      <div class="footer__copy">
-        &copy; 2024 ИП «Красный Яр». Все права защищены.
-      </div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
+  <script src="js/components.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

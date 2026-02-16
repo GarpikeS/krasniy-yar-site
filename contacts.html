@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ИП «Красный Яр»</title>
+  <meta name="description" content="Контакты индустриального парка «Красный Яр» — телефон, email, адрес, форма обратной связи и карта проезда.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacts">
+  <div id="site-header"></div>
+
+  <div class="breadcrumbs"><div class="container">
+    <a href="index.html" class="breadcrumbs__link">Главная</a>
+    <span class="breadcrumbs__sep">/</span>
+    <span class="breadcrumbs__current">Контакты</span>
+  </div></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero__tag">Контакты</span>
+      <h1 class="page-hero__title">Свяжитесь с нами</h1>
+      <p class="page-hero__subtitle">Мы готовы ответить на ваши вопросы</p>
+    </div>
+  </section>
+
+  <!-- Contacts Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contacts-page">
+
+        <!-- Left Column — Form -->
+        <div class="contacts__form-wrap">
+          <h2 class="contacts__form-title">Напишите нам</h2>
+          <form id="contactsPageForm" class="contacts__form">
+            <div class="form-group">
+              <label class="form-group__label" for="cp-name">Имя <span class="form-group__req">*</span></label>
+              <input class="form-group__input" type="text" id="cp-name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="cp-phone">Телефон <span class="form-group__req">*</span></label>
+              <input class="form-group__input" type="tel" id="cp-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="cp-email">Email</label>
+              <input class="form-group__input" type="email" id="cp-email" name="email" placeholder="example@mail.ru">
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="cp-company">Компания</label>
+              <input class="form-group__input" type="text" id="cp-company" name="company" placeholder="Название компании">
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="cp-message">Сообщение</label>
+              <textarea class="form-group__textarea" id="cp-message" name="message" rows="5" placeholder="Ваше сообщение..."></textarea>
+            </div>
+            <button class="btn btn--red" type="submit">Отправить заявку</button>
+            <p class="contacts__privacy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+          </form>
+        </div>
+
+        <!-- Right Column — Contact Info -->
+        <div class="contacts__info-wrap">
+          <h2 class="contacts__info-title">Контактная информация</h2>
+          <ul class="contacts__info-list">
+            <li class="contacts__info-item">
+              <span class="contacts__info-label">Телефон</span>
+              <a class="contacts__info-value contacts__info-value--link" href="tel:+73919899949">+7 (391) 989-99-49</a>
+            </li>
+            <li class="contacts__info-item">
+              <span class="contacts__info-label">Email</span>
+              <a class="contacts__info-value contacts__info-value--link" href="mailto:red-yar@mail.ru">red-yar@mail.ru</a>
+            </li>
+            <li class="contacts__info-item">
+              <span class="contacts__info-label">Адрес</span>
+              <span class="contacts__info-value">г. Красноярск, вблизи федеральной автодороги Р-255 «Сибирь»</span>
+            </li>
+            <li class="contacts__info-item">
+              <span class="contacts__info-label">Часы работы</span>
+              <span class="contacts__info-value">Пн-Пт: 9:00 — 18:00</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisites -->
+  <section class="section requisites">
+    <div class="container">
+      <h2 class="section__title">Реквизиты</h2>
+      <div class="requisites__content">
+        <p class="requisites__name">ООО «Красный Яр»</p>
+        <ul class="requisites__list">
+          <li class="requisites__item"><span class="requisites__label">ИНН:</span> ХХХХХХХХХХ</li>
+          <li class="requisites__item"><span class="requisites__label">ОГРН:</span> ХХХХХХХХХХХХХ</li>
+          <li class="requisites__item"><span class="requisites__label">Юридический адрес:</span> г. Красноярск</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section--full-width contacts-map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1750e2eaee10e2c2ab70c9c9e9d9e8b8d2b5e9d8&source=constructor&ll=92.957249%2C56.009430&z=12" width="100%" height="450" frameborder="0" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
