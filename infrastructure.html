@@ -162,8 +162,99 @@
         <h2 class="section__title">Генплан территории</h2>
       </div>
 
-      <div class="genplan__image fade-up">
-        <img src="assets/img/genplan-1.jpg" alt="Генплан территории парка Красный Яр" loading="lazy" style="width:100%;border-radius:16px;">
+      <p class="section__desc">Нажмите «Показать историю», чтобы увидеть очередность ввода в эксплуатацию</p>
+
+      <div class="genplan-interactive fade-up" id="genplan">
+        <img src="assets/img/genplan-1.jpg" alt="Генплан территории парка Красный Яр" class="genplan-interactive__img">
+
+        <!-- Markers: positioned by % relative to image -->
+        <div class="genplan-marker" data-order="1" style="left:22%;top:55%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2013</div>
+            <div class="genplan-marker__name">АО «Спецтехномаш»</div>
+            <div class="genplan-marker__info">8 900 м² · Горно-обогатительное оборудование</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="2" style="left:42%;top:48%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2017</div>
+            <div class="genplan-marker__name">ООО «УралСибТрейд»</div>
+            <div class="genplan-marker__info">11 978 м² · Металлопрокат</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="3" style="left:55%;top:42%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2017</div>
+            <div class="genplan-marker__name">ООО «Завод МК»</div>
+            <div class="genplan-marker__info">5 870 м² · Металлоконструкции</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="4" style="left:38%;top:68%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2017</div>
+            <div class="genplan-marker__name">4UPRINT</div>
+            <div class="genplan-marker__info">514 м² · Полиграфия</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="5" style="left:63%;top:56%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2018</div>
+            <div class="genplan-marker__name">ООО «Континенталь»</div>
+            <div class="genplan-marker__info">1 170 м² · Нержавеющий металлопрокат</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="6" style="left:72%;top:38%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2022</div>
+            <div class="genplan-marker__name">ООО «ОТК»</div>
+            <div class="genplan-marker__info">1 008 м² · Металлообработка</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="7" style="left:68%;top:25%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2023</div>
+            <div class="genplan-marker__name">ООО «Грузовая механика»</div>
+            <div class="genplan-marker__info">11 713 м² · Грузоподъёмное оборудование</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="8" style="left:80%;top:48%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2025</div>
+            <div class="genplan-marker__name">ООО «ИлАр»</div>
+            <div class="genplan-marker__info">1 761 м² · Металлоконструкции</div>
+          </div>
+        </div>
+
+        <div class="genplan-marker" data-order="9" style="left:85%;top:62%">
+          <div class="genplan-marker__dot"></div>
+          <div class="genplan-marker__popup">
+            <div class="genplan-marker__year">2025</div>
+            <div class="genplan-marker__name">ООО «ТР Резерв»</div>
+            <div class="genplan-marker__info">1 959 м² · Резервуары</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:24px" class="fade-up">
+        <button class="btn btn--primary" id="genplanPlay">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Показать историю
+        </button>
       </div>
     </div>
   </section>
@@ -183,5 +274,62 @@
   <script src="js/components.js"></script>
   <script src="js/main.js"></script>
   <script src="js/lightbox.js"></script>
+  <script>
+  (function() {
+    var markers = document.querySelectorAll('.genplan-marker');
+    var playBtn = document.getElementById('genplanPlay');
+    var isPlaying = false;
+
+    if (!markers.length || !playBtn) return;
+
+    // Initially hide all markers
+    markers.forEach(function(m) {
+      m.classList.add('genplan-marker--hidden');
+    });
+
+    playBtn.addEventListener('click', function() {
+      if (isPlaying) return;
+      isPlaying = true;
+      playBtn.disabled = true;
+      playBtn.textContent = 'Воспроизведение...';
+
+      // Reset all markers
+      markers.forEach(function(m) {
+        m.classList.remove('genplan-marker--visible', 'genplan-marker--active');
+        m.classList.add('genplan-marker--hidden');
+      });
+
+      // Sort by data-order
+      var sorted = Array.from(markers).sort(function(a, b) {
+        return parseInt(a.dataset.order) - parseInt(b.dataset.order);
+      });
+
+      // Animate sequentially
+      sorted.forEach(function(marker, i) {
+        setTimeout(function() {
+          marker.classList.remove('genplan-marker--hidden');
+          marker.classList.add('genplan-marker--visible', 'genplan-marker--active');
+
+          // Hide popup of previous marker after delay
+          if (i > 0) {
+            sorted[i - 1].classList.remove('genplan-marker--active');
+          }
+
+          // Last marker: finish
+          if (i === sorted.length - 1) {
+            setTimeout(function() {
+              marker.classList.remove('genplan-marker--active');
+              isPlaying = false;
+              playBtn.disabled = false;
+              playBtn.innerHTML =
+                '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 105.64-8.36L1 10"/></svg>' +
+                'Повторить';
+            }, 2000);
+          }
+        }, i * 800);
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
