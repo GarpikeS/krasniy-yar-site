@@ -334,7 +334,7 @@ ul { list-style: none; }
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: url('https://thb.tildacdn.com/tild3535-6333-4330-a535-333463623534/-/format/webp/693_content.jpg') center/cover no-repeat;
+  background: url('../assets/img/gallery/1.jpg') center/cover no-repeat;
   opacity: 0.35;
 }
 
@@ -568,6 +568,86 @@ ul { list-style: none; }
 }
 
 /* ============================
+   Target Audience
+   ============================ */
+.target__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.target-card {
+  padding: 32px;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.target-card:hover {
+  border-color: var(--red);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.target-card--featured {
+  border-color: var(--red);
+  background: linear-gradient(135deg, #fff 0%, #fef2f2 100%);
+}
+
+.target-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.target-card__badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  margin-bottom: 20px;
+}
+
+.target-card--featured .target-card__badge {
+  background: rgba(196, 30, 58, 0.1);
+  color: var(--red);
+}
+
+.target-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.target-card__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: var(--gray-600);
+}
+
+.target-card__list svg {
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .target__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================
    Advantages
    ============================ */
 .advantages__grid {
@@ -577,11 +657,14 @@ ul { list-style: none; }
 }
 
 .advantage-card {
+  display: block;
   padding: 36px 28px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-lg);
   transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
 }
 
 .advantage-card:hover {
@@ -3877,6 +3960,24 @@ a.footer__contact-item:hover {
 }
 
 /* ============================
+   About page — description
+   ============================ */
+.about-desc {
+  max-width: 900px;
+}
+
+.about-desc__text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+.about-desc__text:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================
    About page — history + stats side-by-side
    ============================ */
 .about-top {
@@ -4233,6 +4334,147 @@ a.footer__contact-item:hover {
   .infra-tiles {
     grid-template-columns: 1fr;
     max-width: 320px;
+  }
+}
+
+/* ============================
+   Transport & Security
+   ============================ */
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.transport-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.transport-card:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.transport-card__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 30, 58, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--red);
+  margin: 0 auto 16px;
+}
+
+.transport-card__title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.transport-card__text {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .transport-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .transport-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .transport-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================
+   Services Grid
+   ============================ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.service-card__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 30, 58, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+.service-card__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.service-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card__list li {
+  padding: 6px 0;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.service-card__list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
